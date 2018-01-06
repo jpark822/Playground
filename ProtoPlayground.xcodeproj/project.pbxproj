@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E69723920003CCE00DAE431 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69723820003CCE00DAE431 /* HomeViewController.swift */; };
+		4E69723E20003D5500DAE431 /* FirebaseDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E69723D20003D5500DAE431 /* FirebaseDemo.storyboard */; };
+		4E69724020003D6B00DAE431 /* FirebaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69723F20003D6B00DAE431 /* FirebaseLoginViewController.swift */; };
+		4E69724220010E0D00DAE431 /* FirebaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69724120010E0D00DAE431 /* FirebaseTabBarController.swift */; };
+		4E69724420010F0500DAE431 /* FirebaseProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E69724320010F0500DAE431 /* FirebaseProductListViewController.swift */; };
+		4E6972482001141500DAE431 /* FirebaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6972472001141500DAE431 /* FirebaseItem.swift */; };
 		4EA983001FFD07570019E25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA982FF1FFD07570019E25D /* AppDelegate.swift */; };
-		4EA983021FFD07570019E25D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA983011FFD07570019E25D /* ViewController.swift */; };
 		4EA983051FFD07570019E25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA983031FFD07570019E25D /* Main.storyboard */; };
 		4EA983071FFD07570019E25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA983061FFD07570019E25D /* Assets.xcassets */; };
 		4EA9830A1FFD07570019E25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA983081FFD07570019E25D /* LaunchScreen.storyboard */; };
 		4EA983131FFD08630019E25D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA983121FFD08630019E25D /* GoogleService-Info.plist */; };
+		4EEFD295200116F1009ED14B /* FirebaseConsumableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD294200116F1009ED14B /* FirebaseConsumableModel.swift */; };
+		4EEFD29820011794009ED14B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD29720011794009ED14B /* ServiceManager.swift */; };
+		4EEFD29A200117E8009ED14B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD299200117E8009ED14B /* Router.swift */; };
 		7034EFC388FD2C68AA83F277 /* Pods_ProtoPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7097656680F8FD6C049776F /* Pods_ProtoPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B71D7DBC5D9FACE92FC4242 /* Pods-ProtoPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtoPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtoPlayground/Pods-ProtoPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		4E69723820003CCE00DAE431 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4E69723D20003D5500DAE431 /* FirebaseDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseDemo.storyboard; sourceTree = "<group>"; };
+		4E69723F20003D6B00DAE431 /* FirebaseLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginViewController.swift; sourceTree = "<group>"; };
+		4E69724120010E0D00DAE431 /* FirebaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTabBarController.swift; sourceTree = "<group>"; };
+		4E69724320010F0500DAE431 /* FirebaseProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProductListViewController.swift; sourceTree = "<group>"; };
+		4E6972472001141500DAE431 /* FirebaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItem.swift; sourceTree = "<group>"; };
 		4EA982FC1FFD07570019E25D /* ProtoPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA982FF1FFD07570019E25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EA983011FFD07570019E25D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EA983041FFD07570019E25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EA983061FFD07570019E25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EA983091FFD07570019E25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA9830B1FFD07570019E25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA983121FFD08630019E25D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4EEFD294200116F1009ED14B /* FirebaseConsumableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConsumableModel.swift; sourceTree = "<group>"; };
+		4EEFD29720011794009ED14B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		4EEFD299200117E8009ED14B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		6D8627C9942BA97F63FC762A /* Pods-ProtoPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtoPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtoPlayground/Pods-ProtoPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		E7097656680F8FD6C049776F /* Pods_ProtoPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtoPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +58,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E69723720003CC300DAE431 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4E69723820003CCE00DAE431 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4E69723C20003D3F00DAE431 /* FirebaseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4E69723D20003D5500DAE431 /* FirebaseDemo.storyboard */,
+				4EEFD2962001177E009ED14B /* ServiceManager */,
+				4E6972492001141C00DAE431 /* DataModel */,
+				4E6972462001138700DAE431 /* TabBar */,
+				4E6972452001138100DAE431 /* Login */,
+			);
+			name = FirebaseDemo;
+			sourceTree = "<group>";
+		};
+		4E6972452001138100DAE431 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4E69723F20003D6B00DAE431 /* FirebaseLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		4E6972462001138700DAE431 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4E69724120010E0D00DAE431 /* FirebaseTabBarController.swift */,
+				4E69724320010F0500DAE431 /* FirebaseProductListViewController.swift */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		4E6972492001141C00DAE431 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFD293200116D7009ED14B /* Protocols */,
+				4E6972472001141500DAE431 /* FirebaseItem.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 		4EA982F31FFD07570019E25D = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +125,10 @@
 		4EA982FE1FFD07570019E25D /* ProtoPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				4EA983111FFD07710019E25D /* SupportingFiles */,
-				4EA983011FFD07570019E25D /* ViewController.swift */,
+				4E69723C20003D3F00DAE431 /* FirebaseDemo */,
 				4EA983031FFD07570019E25D /* Main.storyboard */,
+				4E69723720003CC300DAE431 /* Home */,
+				4EA983111FFD07710019E25D /* SupportingFiles */,
 				4EA983061FFD07570019E25D /* Assets.xcassets */,
 			);
 			path = ProtoPlayground;
@@ -80,6 +143,23 @@
 				4EA9830B1FFD07570019E25D /* Info.plist */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4EEFD293200116D7009ED14B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFD294200116F1009ED14B /* FirebaseConsumableModel.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4EEFD2962001177E009ED14B /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFD29720011794009ED14B /* ServiceManager.swift */,
+				4EEFD299200117E8009ED14B /* Router.swift */,
+			);
+			name = ServiceManager;
 			sourceTree = "<group>";
 		};
 		8FF2DAFC8C67B05421E881E0 /* Pods */ = {
@@ -163,6 +243,7 @@
 			files = (
 				4EA9830A1FFD07570019E25D /* LaunchScreen.storyboard in Resources */,
 				4EA983131FFD08630019E25D /* GoogleService-Info.plist in Resources */,
+				4E69723E20003D5500DAE431 /* FirebaseDemo.storyboard in Resources */,
 				4EA983071FFD07570019E25D /* Assets.xcassets in Resources */,
 				4EA983051FFD07570019E25D /* Main.storyboard in Resources */,
 			);
@@ -235,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA983021FFD07570019E25D /* ViewController.swift in Sources */,
+				4E69724020003D6B00DAE431 /* FirebaseLoginViewController.swift in Sources */,
 				4EA983001FFD07570019E25D /* AppDelegate.swift in Sources */,
+				4E69724220010E0D00DAE431 /* FirebaseTabBarController.swift in Sources */,
+				4EEFD29820011794009ED14B /* ServiceManager.swift in Sources */,
+				4EEFD29A200117E8009ED14B /* Router.swift in Sources */,
+				4E6972482001141500DAE431 /* FirebaseItem.swift in Sources */,
+				4E69724420010F0500DAE431 /* FirebaseProductListViewController.swift in Sources */,
+				4EEFD295200116F1009ED14B /* FirebaseConsumableModel.swift in Sources */,
+				4E69723920003CCE00DAE431 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
