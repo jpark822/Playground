@@ -11,18 +11,22 @@ import Firebase
 
 struct FirebaseItem: FirebaseConsumableModel {
     
-    let snapshotKey:String
-    var name:String
-    var addedByUsername:String
+    let guid: String
+    let snapshotKey: String
     let databaseReference:DatabaseReference?
     
+    let name: String
+    let addedByUsername: String
+    
+    
     //used when building local items with the intent of pushing it to firebase
-    init(name:String, addedByUsername:String) {
-        self.name = name
-        self.addedByUsername = addedByUsername
-        
+    init(name: String, addedByUsername: String) {
+        self.guid = UUID().uuidString
         self.snapshotKey = ""
         self.databaseReference = nil
+        
+        self.name = name
+        self.addedByUsername = addedByUsername
     }
     
     //used when parsing data from firebase
@@ -31,14 +35,16 @@ struct FirebaseItem: FirebaseConsumableModel {
         databaseReference = snapshot.ref
         
         let snapshotValue = snapshot.value as! [String: AnyObject]
-        name = snapshotValue["name"] as! String
-        addedByUsername = snapshotValue["addedByUsername"] as! String
+        self.name = snapshotValue["name"] as! String
+        self.addedByUsername = snapshotValue["addedByUsername"] as! String
+        self.guid = snapshotValue["guid"] as! String
     }
     
     func toFirebaseConsumable() -> Any {
         return [
-            "name": name,
-            "addedByUsername": addedByUsername,
+            "name": self.name,
+            "addedByUsername": self.addedByUsername,
+            "guid" : self.guid
         ]
     }
 }

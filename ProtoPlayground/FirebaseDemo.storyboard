@@ -72,17 +72,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="Wwo-z4-SRC" kind="relationship" relationship="viewControllers" id="kcb-68-mcc"/>
+                        <segue destination="87e-Vr-ErO" kind="relationship" relationship="viewControllers" id="Iwi-cR-1Ap"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rja-Kr-f77" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1484" y="-122"/>
         </scene>
-        <!--Item-->
+        <!--Items-->
         <scene sceneID="993-8M-2Uh">
             <objects>
                 <navigationController id="Wwo-z4-SRC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZHd-7D-JAX"/>
+                    <tabBarItem key="tabBarItem" title="Items" id="ZHd-7D-JAX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yBQ-67-r79">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -96,16 +97,16 @@
             </objects>
             <point key="canvasLocation" x="2404" y="-523"/>
         </scene>
-        <!--List-->
+        <!--Items-->
         <scene sceneID="WXL-P6-WCt">
             <objects>
                 <viewController storyboardIdentifier="FirebaseProductListViewControllerId" id="0cb-an-Kt1" customClass="FirebaseProductListViewController" customModule="ProtoPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmk-wL-82p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iRN-38-EKk">
-                                <rect key="frame" x="0.0" y="44" width="380" height="665"/>
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="641"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -113,7 +114,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Jw-gO-pWZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="List" id="KSk-Lj-OEQ"/>
+                    <tabBarItem key="tabBarItem" title="Items" id="KSk-Lj-OEQ"/>
                     <navigationItem key="navigationItem" id="Rxs-cp-3zT">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="dkl-Q4-miC"/>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="iNT-Ml-E5R">
@@ -122,14 +123,57 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="tableView" destination="iRN-38-EKk" id="UH5-jb-VSN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJ2-FX-qbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3201" y="-523"/>
+            <point key="canvasLocation" x="3200.8000000000002" y="-523.15270935960598"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="mNx-Rb-91a">
+            <objects>
+                <navigationController id="87e-Vr-ErO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" id="FoK-VR-e78"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="uaZ-Bg-nDt">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o3q-Br-v1L" kind="relationship" relationship="rootViewController" id="lGz-Li-rjr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9k-7j-cCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="171"/>
+        </scene>
+        <!--Firebase Favorites View Controller-->
+        <scene sceneID="Eom-gH-cUp">
+            <objects>
+                <viewController storyboardIdentifier="FirebaseFavoritesViewControllerId" id="o3q-Br-v1L" customClass="FirebaseFavoritesViewController" customModule="ProtoPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvL-mh-yNV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-Mq-tgs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cKJ-ZQ-Ot4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IyU-yy-WEv"/>
+                    <connections>
+                        <outlet property="tableView" destination="pjk-Mq-tgs" id="9Wu-yg-Z16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeZ-GR-n9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3200.8000000000002" y="170.68965517241381"/>
         </scene>
     </scenes>
 </document>

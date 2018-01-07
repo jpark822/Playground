@@ -13,6 +13,8 @@ class FirebaseProductListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    private let itemCellReuseId = "itemCellReuseId"
+    
     var items = [FirebaseItem]() {
         didSet {
             self.tableView.reloadData()
@@ -21,6 +23,8 @@ class FirebaseProductListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.register(UINib(nibName: "FireBaseItemTableViewCell", bundle: nil), forCellReuseIdentifier: self.itemCellReuseId)
 
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -74,17 +78,22 @@ extension FirebaseProductListViewController: UITableViewDelegate, UITableViewDat
         
         let item = self.items[indexPath.row]
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseID) {
-            cell.textLabel?.text = item.name
-            cell.detailTextLabel?.text = item.addedByUsername
-            return cell
-        }
-        else {
-            let cell = UITableViewCell(style: .subtitle, reuseIdentifier: reuseID)
-            cell.textLabel?.text = item.name
-            cell.detailTextLabel?.text = item.addedByUsername
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.itemCellReuseId) as! FirebaseItemTableViewCell
+        cell.primaryLabel.text = item.name
+        cell.secondaryLabel.text = item.addedByUsername
+        
+        return cell
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseID) {
+//            cell.textLabel?.text = item.name
+//            cell.detailTextLabel?.text = item.addedByUsername
+//            return cell
+//        }
+//        else {
+//            let cell = UITableViewCell(style: .subtitle, reuseIdentifier: reuseID)
+//            cell.textLabel?.text = item.name
+//            cell.detailTextLabel?.text = item.addedByUsername
+//            return cell
+//        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

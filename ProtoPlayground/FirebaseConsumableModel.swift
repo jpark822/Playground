@@ -9,5 +9,7 @@
 import Foundation
 
 protocol FirebaseConsumableModel {
+    var guid:String { get }
+    
     func toFirebaseConsumable() -> Any
 }
