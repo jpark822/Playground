@@ -135,9 +135,9 @@
 		4EA982FE1FFD07570019E25D /* ProtoPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				4E69723C20003D3F00DAE431 /* FirebaseDemo */,
 				4EA983031FFD07570019E25D /* Main.storyboard */,
 				4E69723720003CC300DAE431 /* Home */,
+				4E69723C20003D3F00DAE431 /* FirebaseDemo */,
 				4EA983111FFD07710019E25D /* SupportingFiles */,
 				4EA983061FFD07570019E25D /* Assets.xcassets */,
 			);
