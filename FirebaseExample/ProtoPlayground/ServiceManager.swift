@@ -26,4 +26,14 @@ extension ServiceManager {
         
         databaseItemRef.setValue(item.toFirebaseConsumable())
     }
+    
+}
+
+//Favorites
+extension ServiceManager {
+    func addFavoriteItem(_ item: FirebaseItem) {
+        let firebaseItemListReference = Database.database().reference(withPath: Router.userFavorites.pathString)
+        
+        firebaseItemListReference.updateChildValues([item.name : item.guid])
+    }
 }

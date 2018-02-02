@@ -21,7 +21,7 @@ struct FirebaseItem: FirebaseConsumableModel {
     
     //used when building local items with the intent of pushing it to firebase
     init(name: String, addedByUsername: String) {
-        self.guid = UUID().uuidString
+        self.guid = String(arc4random_uniform(999999))
         self.snapshotKey = ""
         self.databaseReference = nil
         

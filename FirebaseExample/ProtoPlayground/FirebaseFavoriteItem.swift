@@ -17,7 +17,7 @@ struct FirebaseFavoriteItem:FirebaseConsumableModel {
     let favoriteReferenceGuid: String
     
     init(item:FirebaseConsumableModel) {
-        self.guid = UUID().uuidString
+        self.guid = String(arc4random_uniform(999999))
         self.snapshotKey = ""
         self.databaseReference = nil
         

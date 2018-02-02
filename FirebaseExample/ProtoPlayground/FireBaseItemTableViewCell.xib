@@ -28,13 +28,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29y-Bb-fFl">
+                    <rect key="frame" x="182" y="33" width="55" height="30"/>
+                    <state key="normal" title="Favorite"/>
+                    <connections>
+                        <action selector="favoritePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0dA-pU-AFs"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XuL-u8-GNr" secondAttribute="trailing" constant="20" id="4wf-sf-8gb"/>
+                <constraint firstItem="29y-Bb-fFl" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Fe4-1O-fL6"/>
                 <constraint firstItem="nCo-eC-Rpf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ODd-tt-I0p"/>
                 <constraint firstItem="nCo-eC-Rpf" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="XkR-1N-cmn"/>
                 <constraint firstItem="XuL-u8-GNr" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="mSe-hY-hI0"/>
+                <constraint firstItem="29y-Bb-fFl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="plX-Qi-GPU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

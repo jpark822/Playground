@@ -74,26 +74,13 @@ class FirebaseProductListViewController: UIViewController {
 //MARK: uitableview datasource and delegate
 extension FirebaseProductListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reuseID = "listCellReuseId"
-        
         let item = self.items[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: self.itemCellReuseId) as! FirebaseItemTableViewCell
-        cell.primaryLabel.text = item.name
-        cell.secondaryLabel.text = item.addedByUsername
+        cell.configureWithItem(item, indexPath: indexPath)
+        cell.delegate = self
         
         return cell
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseID) {
-//            cell.textLabel?.text = item.name
-//            cell.detailTextLabel?.text = item.addedByUsername
-//            return cell
-//        }
-//        else {
-//            let cell = UITableViewCell(style: .subtitle, reuseIdentifier: reuseID)
-//            cell.textLabel?.text = item.name
-//            cell.detailTextLabel?.text = item.addedByUsername
-//            return cell
-//        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -102,5 +89,13 @@ extension FirebaseProductListViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
+    }
+}
+
+//MARK: FirebaseItemTableViewCellDelegate
+extension FirebaseProductListViewController: FirebaseItemTableViewCellDelegate {
+    func firebaseItemTableViewFavoriteTapped(cell: FirebaseItemTableViewCell) {
+        let item = self.items[cell.indexPath!.row]
+        ServiceManager.sharedInstance.addFavoriteItem(item)
     }
 }

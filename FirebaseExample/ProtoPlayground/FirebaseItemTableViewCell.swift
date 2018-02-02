@@ -8,17 +8,30 @@
 
 import UIKit
 
+protocol FirebaseItemTableViewCellDelegate : NSObjectProtocol {
+    func firebaseItemTableViewFavoriteTapped(cell: FirebaseItemTableViewCell)
+}
+
 class FirebaseItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!
     
+    var indexPath:IndexPath?
+    weak var delegate:FirebaseItemTableViewCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func configureWithItem(_ item: FirebaseItem, indexPath:IndexPath) {
+        self.primaryLabel.text = item.name
+        self.secondaryLabel.text = item.addedByUsername
+        
+        self.indexPath = indexPath
     }
-
+    
+    @IBAction func favoritePressed(_ sender: Any) {
+        self.delegate?.firebaseItemTableViewFavoriteTapped(cell: self)
+    }
 }

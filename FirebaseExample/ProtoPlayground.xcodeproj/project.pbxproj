@@ -21,6 +21,7 @@
 		4EBE3FED2002506400EAC7EC /* FirebaseFavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE3FEC2002506400EAC7EC /* FirebaseFavoriteItem.swift */; };
 		4EBE3FF0200261A300EAC7EC /* FirebaseItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE3FEF200261A300EAC7EC /* FirebaseItemTableViewCell.swift */; };
 		4EBE3FF2200261CE00EAC7EC /* FireBaseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EBE3FF1200261CE00EAC7EC /* FireBaseItemTableViewCell.xib */; };
+		4EBE3FF520028DA700EAC7EC /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE3FF420028DA700EAC7EC /* FavoritesManager.swift */; };
 		4EEFD295200116F1009ED14B /* FirebaseConsumableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD294200116F1009ED14B /* FirebaseConsumableModel.swift */; };
 		4EEFD29820011794009ED14B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD29720011794009ED14B /* ServiceManager.swift */; };
 		4EEFD29A200117E8009ED14B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEFD299200117E8009ED14B /* Router.swift */; };
@@ -46,6 +47,7 @@
 		4EBE3FEC2002506400EAC7EC /* FirebaseFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFavoriteItem.swift; sourceTree = "<group>"; };
 		4EBE3FEF200261A300EAC7EC /* FirebaseItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItemTableViewCell.swift; sourceTree = "<group>"; };
 		4EBE3FF1200261CE00EAC7EC /* FireBaseItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FireBaseItemTableViewCell.xib; sourceTree = "<group>"; };
+		4EBE3FF420028DA700EAC7EC /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		4EEFD294200116F1009ED14B /* FirebaseConsumableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConsumableModel.swift; sourceTree = "<group>"; };
 		4EEFD29720011794009ED14B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		4EEFD299200117E8009ED14B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		4E6972492001141C00DAE431 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				4EBE3FF320028D9600EAC7EC /* FavoritesManager */,
 				4EEFD293200116D7009ED14B /* Protocols */,
 				4E6972472001141500DAE431 /* FirebaseItem.swift */,
 				4EBE3FEC2002506400EAC7EC /* FirebaseFavoriteItem.swift */,
@@ -162,6 +165,14 @@
 				4EBE3FF1200261CE00EAC7EC /* FireBaseItemTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4EBE3FF320028D9600EAC7EC /* FavoritesManager */ = {
+			isa = PBXGroup;
+			children = (
+				4EBE3FF420028DA700EAC7EC /* FavoritesManager.swift */,
+			);
+			name = FavoritesManager;
 			sourceTree = "<group>";
 		};
 		4EEFD293200116D7009ED14B /* Protocols */ = {
@@ -356,6 +367,7 @@
 				4EBE3FED2002506400EAC7EC /* FirebaseFavoriteItem.swift in Sources */,
 				4EEFD2A1200179E1009ED14B /* FirebaseFavoritesViewController.swift in Sources */,
 				4EEFD295200116F1009ED14B /* FirebaseConsumableModel.swift in Sources */,
+				4EBE3FF520028DA700EAC7EC /* FavoritesManager.swift in Sources */,
 				4E69723920003CCE00DAE431 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

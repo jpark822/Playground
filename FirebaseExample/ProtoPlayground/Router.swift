@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import Firebase
 
 enum Router {
     case userAddedItems
     case userSettings
-    
+    case userFavorites
     
     
     var pathString:String {
@@ -20,8 +21,11 @@ enum Router {
             case .userAddedItems:
                 return "userAddeditems"
             case .userSettings:
-                return "userSettings"
+                return "userSettings/\(Auth.auth().currentUser!.uid)"
+            case .userFavorites:
+                return "\(Router.userSettings.pathString)/favorites"
             }
+            
         }
     }
 }
