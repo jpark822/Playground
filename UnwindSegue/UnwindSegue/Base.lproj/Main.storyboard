@@ -87,6 +87,14 @@
                                     <segue destination="35s-uU-0oA" kind="unwind" unwindAction="unwindToSecondVC:" id="bhh-7b-kjJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL6-Vi-vxT">
+                                <rect key="frame" x="120" y="468" width="239" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dismissal to root instead of unwind"/>
+                                <connections>
+                                    <action selector="dismissToRoot:" destination="8Fj-EM-Wwo" eventType="touchUpInside" id="wUN-3K-j6q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="jPZ-wu-bE3"/>

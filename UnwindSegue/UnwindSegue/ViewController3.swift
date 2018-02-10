@@ -28,5 +28,12 @@ class ViewController3: UIViewController {
     @IBAction func unwindToThirdVC(_ segue: UIStoryboardSegue) {
         print("unwinding to 3")
     }
-
+    
+    //when you dismiss mutliple view controllers, the animation only looks like its dismissing the root viewcontroller's immediate child.
+    @IBAction func dismissToRoot(_ sender: Any) {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController?.dismiss(animated: true)
+        }
+    }
+    
 }
