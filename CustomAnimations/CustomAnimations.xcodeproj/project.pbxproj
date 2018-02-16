@@ -13,7 +13,7 @@
 		4E851B9B2037705900E18B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E851B9A2037705900E18B0B /* Assets.xcassets */; };
 		4E851B9E2037705900E18B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E851B9C2037705900E18B0B /* LaunchScreen.storyboard */; };
 		4E851BA72037707D00E18B0B /* DragDismiss.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E851BA62037707D00E18B0B /* DragDismiss.storyboard */; };
-		4E851BA9203770E200E18B0B /* DragDismissBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851BA8203770E200E18B0B /* DragDismissBaseViewController.swift */; };
+		4E851BA9203770E200E18B0B /* DragDismissBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851BA8203770E200E18B0B /* DragDismissBottomViewController.swift */; };
 		4E851BAB203770EF00E18B0B /* DragDismissTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851BAA203770EF00E18B0B /* DragDismissTopViewController.swift */; };
 		4E851BAD2037713600E18B0B /* DragToDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851BAC2037713600E18B0B /* DragToDismissAnimator.swift */; };
 		4E851BAF2037740400E18B0B /* DragDismissInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851BAE2037740400E18B0B /* DragDismissInteractor.swift */; };
@@ -28,7 +28,7 @@
 		4E851B9D2037705900E18B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E851B9F2037705900E18B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E851BA62037707D00E18B0B /* DragDismiss.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DragDismiss.storyboard; sourceTree = "<group>"; };
-		4E851BA8203770E200E18B0B /* DragDismissBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDismissBaseViewController.swift; sourceTree = "<group>"; };
+		4E851BA8203770E200E18B0B /* DragDismissBottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDismissBottomViewController.swift; sourceTree = "<group>"; };
 		4E851BAA203770EF00E18B0B /* DragDismissTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDismissTopViewController.swift; sourceTree = "<group>"; };
 		4E851BAC2037713600E18B0B /* DragToDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragToDismissAnimator.swift; sourceTree = "<group>"; };
 		4E851BAE2037740400E18B0B /* DragDismissInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDismissInteractor.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		4E851BB02037762C00E18B0B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E851BA8203770E200E18B0B /* DragDismissBaseViewController.swift */,
+				4E851BA8203770E200E18B0B /* DragDismissBottomViewController.swift */,
 				4E851BAA203770EF00E18B0B /* DragDismissTopViewController.swift */,
 			);
 			path = "View Controllers";
@@ -179,7 +179,7 @@
 				4E851B962037705900E18B0B /* ViewController.swift in Sources */,
 				4E851BAF2037740400E18B0B /* DragDismissInteractor.swift in Sources */,
 				4E851BAB203770EF00E18B0B /* DragDismissTopViewController.swift in Sources */,
-				4E851BA9203770E200E18B0B /* DragDismissBaseViewController.swift in Sources */,
+				4E851BA9203770E200E18B0B /* DragDismissBottomViewController.swift in Sources */,
 				4E851BAD2037713600E18B0B /* DragToDismissAnimator.swift in Sources */,
 				4E851B942037705900E18B0B /* AppDelegate.swift in Sources */,
 			);
