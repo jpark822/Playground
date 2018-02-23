@@ -18,9 +18,8 @@ class DragDismissBottomViewController:UIViewController {
             
             //set for dragging dismissal
             topViewController.transitioningDelegate = self
-            topViewController.dragDismissInteractor = self.dragDismissInteractor
-            
-            self.present(topViewController, animated: true)
+            self.present(topViewController)
+            self.dragDismissInteractor.wirePanGestureRecognizerTo(view: topViewController.view, inViewController: topViewController)
         }
     }
 }
