@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lxW-UA-sEV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zoom Base View Controller-->
+        <scene sceneID="5nm-rO-Gca">
+            <objects>
+                <viewController id="lxW-UA-sEV" customClass="ZoomBaseViewController" customModule="CustomAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aEt-AC-z9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-7a-Ng1">
+                                <rect key="frame" x="0.0" y="492" width="375" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="R4q-7J-xJv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tyk-ta-Tfd">
+                                    <size key="itemSize" width="134" height="174"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XHn-Wh-5fP" customClass="ZoomCollectionViewCell" customModule="CustomAnimations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.5" width="134" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="174"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1vA-1A-0gM" firstAttribute="bottom" secondItem="yyD-7a-Ng1" secondAttribute="bottom" id="KjS-h6-LDb"/>
+                            <constraint firstItem="1vA-1A-0gM" firstAttribute="trailing" secondItem="yyD-7a-Ng1" secondAttribute="trailing" id="e2X-nO-rrN"/>
+                            <constraint firstItem="yyD-7a-Ng1" firstAttribute="leading" secondItem="1vA-1A-0gM" secondAttribute="leading" id="sH5-ru-JuH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1vA-1A-0gM"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="yyD-7a-Ng1" id="ZhP-Cv-1ny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAn-oK-MgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.40000000000001" y="188.45577211394306"/>
+        </scene>
+        <!--Zoom Top View Controller-->
+        <scene sceneID="h1d-HV-F7C">
+            <objects>
+                <viewController storyboardIdentifier="ZoomTopViewControllerId" id="YW3-WN-Y1C" customClass="ZoomTopViewController" customModule="CustomAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1PZ-jS-wHx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJv-ux-BxR">
+                                <rect key="frame" x="160" y="328.5" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="YW3-WN-Y1C" eventType="touchUpInside" id="qTC-MT-dhP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nJv-ux-BxR" firstAttribute="centerY" secondItem="mva-vU-SLo" secondAttribute="centerY" id="Igu-43-9cb"/>
+                            <constraint firstItem="nJv-ux-BxR" firstAttribute="centerX" secondItem="mva-vU-SLo" secondAttribute="centerX" id="kFa-iE-IgX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mva-vU-SLo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veQ-eS-o1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="188"/>
+        </scene>
+    </scenes>
+</document>

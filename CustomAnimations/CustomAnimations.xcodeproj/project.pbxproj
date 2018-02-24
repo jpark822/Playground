@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E02B09A2040CD4D009BAD96 /* Zoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E02B0992040CD4D009BAD96 /* Zoom.storyboard */; };
+		4E02B0A02040CECA009BAD96 /* ZoomBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02B09F2040CECA009BAD96 /* ZoomBaseViewController.swift */; };
+		4E02B0A22040CEF4009BAD96 /* ZoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02B0A12040CEF4009BAD96 /* ZoomCollectionViewCell.swift */; };
+		4E02B0A42041A721009BAD96 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02B0A32041A721009BAD96 /* ZoomAnimator.swift */; };
+		4E02B0A62041B262009BAD96 /* ZoomTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02B0A52041B262009BAD96 /* ZoomTopViewController.swift */; };
 		4E851B942037705900E18B0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851B932037705900E18B0B /* AppDelegate.swift */; };
 		4E851B962037705900E18B0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E851B952037705900E18B0B /* ViewController.swift */; };
 		4E851B992037705900E18B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E851B972037705900E18B0B /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E02B0992040CD4D009BAD96 /* Zoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Zoom.storyboard; sourceTree = "<group>"; };
+		4E02B09F2040CECA009BAD96 /* ZoomBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBaseViewController.swift; sourceTree = "<group>"; };
+		4E02B0A12040CEF4009BAD96 /* ZoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E02B0A32041A721009BAD96 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
+		4E02B0A52041B262009BAD96 /* ZoomTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTopViewController.swift; sourceTree = "<group>"; };
 		4E851B902037705900E18B0B /* CustomAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E851B932037705900E18B0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E851B952037705900E18B0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +55,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E02B0982040CD33009BAD96 /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+				4E02B09B2040CE49009BAD96 /* ViewControllers */,
+				4E02B09E2040CE5E009BAD96 /* Animators */,
+				4E02B09D2040CE55009BAD96 /* CollectionViewCell */,
+				4E02B0992040CD4D009BAD96 /* Zoom.storyboard */,
+			);
+			path = Zoom;
+			sourceTree = "<group>";
+		};
+		4E02B09B2040CE49009BAD96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E02B09F2040CECA009BAD96 /* ZoomBaseViewController.swift */,
+				4E02B0A52041B262009BAD96 /* ZoomTopViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E02B09D2040CE55009BAD96 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E02B0A12040CEF4009BAD96 /* ZoomCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4E02B09E2040CE5E009BAD96 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				4E02B0A32041A721009BAD96 /* ZoomAnimator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
 		4E851B872037705800E18B0B = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +110,7 @@
 		4E851B922037705900E18B0B /* CustomAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				4E02B0982040CD33009BAD96 /* Zoom */,
 				4E851BA52037705D00E18B0B /* DragToDismiss */,
 				4E851B932037705900E18B0B /* AppDelegate.swift */,
 				4E851B952037705900E18B0B /* ViewController.swift */,
@@ -97,10 +144,18 @@
 		4E851BB12037763300E18B0B /* Animators */ = {
 			isa = PBXGroup;
 			children = (
+				4E851BB22040CC4F00E18B0B /* Zoom */,
 				4E851BAC2037713600E18B0B /* DragToDismissAnimator.swift */,
 				4E851BAE2037740400E18B0B /* DragDismissInteractor.swift */,
 			);
 			path = Animators;
+			sourceTree = "<group>";
+		};
+		4E851BB22040CC4F00E18B0B /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Zoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E851B9E2037705900E18B0B /* LaunchScreen.storyboard in Resources */,
+				4E02B09A2040CD4D009BAD96 /* Zoom.storyboard in Resources */,
 				4E851B9B2037705900E18B0B /* Assets.xcassets in Resources */,
 				4E851B992037705900E18B0B /* Main.storyboard in Resources */,
 				4E851BA72037707D00E18B0B /* DragDismiss.storyboard in Resources */,
@@ -176,9 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E02B0A02040CECA009BAD96 /* ZoomBaseViewController.swift in Sources */,
 				4E851B962037705900E18B0B /* ViewController.swift in Sources */,
 				4E851BAF2037740400E18B0B /* DragDismissInteractor.swift in Sources */,
+				4E02B0A62041B262009BAD96 /* ZoomTopViewController.swift in Sources */,
+				4E02B0A22040CEF4009BAD96 /* ZoomCollectionViewCell.swift in Sources */,
 				4E851BAB203770EF00E18B0B /* DragDismissTopViewController.swift in Sources */,
+				4E02B0A42041A721009BAD96 /* ZoomAnimator.swift in Sources */,
 				4E851BA9203770E200E18B0B /* DragDismissBottomViewController.swift in Sources */,
 				4E851BAD2037713600E18B0B /* DragToDismissAnimator.swift in Sources */,
 				4E851B942037705900E18B0B /* AppDelegate.swift in Sources */,

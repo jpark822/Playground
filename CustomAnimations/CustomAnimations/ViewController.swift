@@ -26,5 +26,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func zoom(_ sender: Any) {
+        if let initialVC = UIStoryboard(name: "Zoom", bundle: nil).instantiateInitialViewController() {
+            self.present(initialVC, animated: true)
+        }
+    }
 }
 
