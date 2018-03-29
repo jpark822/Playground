@@ -144,18 +144,10 @@
 		4E851BB12037763300E18B0B /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				4E851BB22040CC4F00E18B0B /* Zoom */,
 				4E851BAC2037713600E18B0B /* DragToDismissAnimator.swift */,
 				4E851BAE2037740400E18B0B /* DragDismissInteractor.swift */,
 			);
 			path = Animators;
-			sourceTree = "<group>";
-		};
-		4E851BB22040CC4F00E18B0B /* Zoom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Zoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
