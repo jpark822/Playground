@@ -12,6 +12,13 @@ class ServiceManager: NSObject {
     let sharedSession:URLSession
     static var sharedInstance = ServiceManager()
     
+    enum HTTPMethod:String {
+        case get = "GET"
+        case post = "POST"
+        case delete = "DELETE"
+        case update = "UPDATE"
+    }
+    
     override init() {
         self.sharedSession = URLSession(configuration: URLSessionConfiguration.default)
         
@@ -25,6 +32,7 @@ class ServiceManager: NSObject {
 //Mark: Grouping endpoints by extension. In this example, things relating to user settings
 extension ServiceManager {
     func getSettingsForCurrentUser(completion:@escaping (ServiceManagerResult<UserModel, NSError>) -> Void) {
+        
         self.sharedSession.dataTask(with: URL(string: Router.firstEndpoint.urlString)!) { (data, response, error) in
             //serialize and parse
             if error == nil {
