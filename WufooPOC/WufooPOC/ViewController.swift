@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        getFormAlamofire()
+        postFormEntryAlamofire()
         
     }
 
@@ -73,7 +73,9 @@ class ViewController: UIViewController {
                       "Field3":"1234567890",
                       "Field6":"two",
                       "Field7":"four"]
-        Alamofire.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", method: .post, parameters: params, encoding: URLEncoding, headers: ["Authorization":"Basic \(base64String)"])
+        Alamofire.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", method: .post, parameters: params, encoding: URLEncoding.default, headers: ["Authorization":"Basic \(base64String)"]).responseJSON { (response) in
+            print(response)
+        }
     }
     
     func getFormAlamofire() {
