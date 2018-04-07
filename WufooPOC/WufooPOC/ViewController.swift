@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        postFormEntryAlamofire()
+        AlamofireManager.sharedInstace.getFormAlamofire()
         
     }
 
@@ -78,13 +78,9 @@ class ViewController: UIViewController {
         }
     }
     
-    func getFormAlamofire() {
-        
-        Alamofire.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", headers: ["Authorization":"Basic \(base64String)"]).responseJSON { (response) in
-            print(response)
-        }
-    }
+    
     
     
 }
+
 

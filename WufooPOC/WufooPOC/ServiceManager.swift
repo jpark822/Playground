@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Alamofire
 
 enum ServiceManagerResult<T, Error:Swift.Error> {
     case success(T)
@@ -15,7 +16,7 @@ enum ServiceManagerResult<T, Error:Swift.Error> {
 }
 
 class ServiceManager: NSObject {
-
+    
     static let sharedInstance = ServiceManager()
     fileprivate var sharedSession:URLSession!
     
