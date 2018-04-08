@@ -17,6 +17,8 @@
 		4EB32E832076DE65002F4DBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E822076DE65002F4DBB /* User.swift */; };
 		4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059DC207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib */; };
 		4EE059E0207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059DF207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib */; };
+		4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */; };
+		4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */; };
 		4EEC37D52079139B0068873D /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D42079139B0068873D /* FormTableViewController.swift */; };
 		4EEC37D7207914850068873D /* FormItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D6207914850068873D /* FormItemView.swift */; };
 		4EEC37DA20791BB70068873D /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D920791BB70068873D /* String+Base64.swift */; };
@@ -38,6 +40,8 @@
 		4EB32E822076DE65002F4DBB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4EE059DC207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		4EE059DF207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPickerTableViewCell.swift; sourceTree = "<group>"; };
+		4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPickerTableViewCell.xib; sourceTree = "<group>"; };
 		4EEC37D42079139B0068873D /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		4EEC37D6207914850068873D /* FormItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItemView.swift; sourceTree = "<group>"; };
 		4EEC37D920791BB70068873D /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				4EE059DF207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib */,
 				4EEC37E1207941CF0068873D /* FormTextFieldTableViewCell.swift */,
 				4EE059DC207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib */,
+				4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */,
+				4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */,
 			);
 			name = "Form Cells";
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				4EB32E7820759E69002F4DBB /* LaunchScreen.storyboard in Resources */,
 				4EB32E7520759E69002F4DBB /* Assets.xcassets in Resources */,
 				4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */,
+				4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */,
 				4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */,
 				4EE059E0207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib in Resources */,
 			);
@@ -289,6 +296,7 @@
 				4EEC37E5207942040068873D /* FormQuestionModel.swift in Sources */,
 				4EEC37D52079139B0068873D /* FormTableViewController.swift in Sources */,
 				4EEC37D7207914850068873D /* FormItemView.swift in Sources */,
+				4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */,
 				4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */,
 				4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */,
 				4EEC37DC20791E880068873D /* AlamofireManager.swift in Sources */,

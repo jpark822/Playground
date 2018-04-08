@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+//        self.postFormEntryAlamofire()
         
     }
 
@@ -72,7 +72,8 @@ class ViewController: UIViewController {
         let params = ["Field2":"Totes",
                       "Field3":"1234567890",
                       "Field6":"two",
-                      "Field7":"four"]
+                      "Field7":"four",
+                      "Field9":"7709255000"]
         Alamofire.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", method: .post, parameters: params, encoding: URLEncoding.default, headers: ["Authorization":"Basic \(base64String)"]).responseJSON { (response) in
             print(response)
         }

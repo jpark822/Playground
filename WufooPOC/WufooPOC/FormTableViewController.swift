@@ -65,9 +65,9 @@ extension FormTableViewController {
             radioCell.formQuestion = questionModel
             return radioCell
         case .select:
-            let dropDownCell = UITableViewCell(style: .default, reuseIdentifier: "questionCell")
+            let dropDownCell = Bundle.main.loadNibNamed("FormPickerTableViewCell", owner: self, options: [:])?.first as! FormPickerTableViewCell
             self.formQuestionCells.append(dropDownCell)
-            dropDownCell.textLabel?.text = "drop down"
+            dropDownCell.formQuestion = questionModel
             return dropDownCell
         case .unknown:
             let unknownCell = UITableViewCell(style: .default, reuseIdentifier: "questionCell")

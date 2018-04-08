@@ -38,6 +38,9 @@ class FormSegmentedControlTableViewCell: UITableViewCell, FormItemView {
             let option = self.formQuestion.answerOptions[index]
             self.segmentedControl.insertSegment(withTitle: option, at: index, animated: false)
         }
+        if self.segmentedControl.numberOfSegments > 0 {
+            self.segmentedControl.selectedSegmentIndex = 0
+        }
     }
 }
 
