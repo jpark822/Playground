@@ -20,6 +20,7 @@
 		4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */; };
 		4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */; };
 		4EE059E6207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE059E5207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift */; };
+		4EE059E8207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059E7207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib */; };
 		4EEC37D52079139B0068873D /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D42079139B0068873D /* FormTableViewController.swift */; };
 		4EEC37D7207914850068873D /* FormItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D6207914850068873D /* FormItemView.swift */; };
 		4EEC37DA20791BB70068873D /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37D920791BB70068873D /* String+Base64.swift */; };
@@ -44,6 +45,7 @@
 		4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPickerTableViewCell.swift; sourceTree = "<group>"; };
 		4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPickerTableViewCell.xib; sourceTree = "<group>"; };
 		4EE059E5207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		4EE059E7207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextViewTableViewCell.xib; sourceTree = "<group>"; };
 		4EEC37D42079139B0068873D /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		4EEC37D6207914850068873D /* FormItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItemView.swift; sourceTree = "<group>"; };
 		4EEC37D920791BB70068873D /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */,
 				4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */,
 				4EE059E5207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift */,
+				4EE059E7207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib */,
 			);
 			name = "Form Cells";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				4EB32E7820759E69002F4DBB /* LaunchScreen.storyboard in Resources */,
 				4EB32E7520759E69002F4DBB /* Assets.xcassets in Resources */,
+				4EE059E8207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib in Resources */,
 				4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */,
 				4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */,
 				4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */,

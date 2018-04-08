@@ -8,17 +8,33 @@
 
 import UIKit
 
-class FormTextViewTableViewCell: UITableViewCell {
+class FormTextViewTableViewCell: UITableViewCell, FormItemView {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    
+    var formQuestion: FormQuestionModel! {
+        didSet {
+            self.configureView()
+        }
+    }
+    
+    var formItemOutputValue: String?
+    {
+        return self.textView.text
+    }
+    
+    var mainInputControl: UIView {
+        return self.textView
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.textView.layer.borderWidth = 1
+        self.textView.layer.borderColor = UIColor.black.cgColor
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    private func configureView() {
+        self.questionLabel.text = self.formQuestion.questionName
     }
-
 }

@@ -34,5 +34,4 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
     private func configureView() {
         self.questionLabel.text = self.formQuestion.questionName
     }
-
 }
