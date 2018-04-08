@@ -11,10 +11,11 @@ import Foundation
 struct FormQuestionModel {
     enum QuestionType:String {
         case unknown = "unknown"
-        case text = "text"
+        case textField = "text"
         case number = "number"
         case radio = "radio"
         case select = "select"
+        case textView = "textarea"
     }
     
     let questionName:String

@@ -49,7 +49,7 @@ extension FormTableViewController {
         let questionModel = self.questionModels[indexPath.row]
         
         switch questionModel.questionType {
-        case .text:
+        case .textField:
             let textCell = Bundle.main.loadNibNamed("FormTextFieldTableViewCell", owner: self, options: [:])?.first as! FormTextFieldTableViewCell
             textCell.formQuestion = questionModel
             self.formQuestionCells.append(textCell)
@@ -69,7 +69,7 @@ extension FormTableViewController {
             self.formQuestionCells.append(dropDownCell)
             dropDownCell.formQuestion = questionModel
             return dropDownCell
-        case .unknown:
+        case .unknown, .textView:
             let unknownCell = UITableViewCell(style: .default, reuseIdentifier: "questionCell")
             self.formQuestionCells.append(unknownCell)
             unknownCell.textLabel?.text = "unknown"
