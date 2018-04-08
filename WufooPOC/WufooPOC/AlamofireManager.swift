@@ -34,9 +34,30 @@ class AlamofireManager: NSObject {
     
     
     
-    func getFormAlamofire() {
+    func getFormAlamofire(completion:@escaping ([FormQuestionModel]?, Error?)->Void) {
         self.sessionManager.request("https://jparksps.wufoo.com.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/fields.json", headers: ["Authorization":"Basic \(AlamofireManager.wufooAPIKey.base64String)"]).responseJSON { (response) in
             print(response)
+            
+            if let error = response.result.error {
+                completion(nil, error)
+            }
+            
+            guard let topLevelJsonDict = response.result.value as? [String:Any],
+            let jsonArray = topLevelJsonDict["Fields"] as? [[String:Any]] else {
+                completion(nil, nil)
+                return
+            }
+
+            let filteredArray = jsonArray.filter({ (dict) -> Bool in
+                //filtering out noise using a common question attribute. fragile
+                return dict["IsRequired"] != nil ? true : false
+            })
+            
+            var parsedModels = [FormQuestionModel]()
+            for jsonDict in filteredArray {
+                parsedModels.append(FormQuestionModel(jsonDict: jsonDict))
+            }
+            completion(parsedModels, nil)
         }
     }
 }

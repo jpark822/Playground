@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
-protocol FormItemOutput {
-    var formItemOutputValue:String {get}
+protocol FormItemView {
+    //To be set after loaded from nib
+    var formQuestion:FormQuestionModel! {get set}
+    var formItemOutputValue:String? {get}
     var mainInputControl:UIView {get}
     
 }
