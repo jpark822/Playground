@@ -13,25 +13,71 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
+    enum TextInputType {
+        case unspecifiedText
+        case email
+        case phoneNumber
+        case fullName
+        case jobTitle
+    }
+    
     var formQuestion: FormQuestionModel! {
         didSet {
             self.configureView()
         }
     }
-    
     var mainInputControl: UIView {
         return self.textField
     }
-    
     var formItemOutputValue: String? {
         return self.textField.text
+    }
+    var inputType:TextInputType = .unspecifiedText {
+        didSet {
+            self.formatTextFieldBasedOnInputType()
+        }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
     }
     
     private func configureView() {
         self.questionLabel.text = self.formQuestion.questionName
+        self.formatTextFieldBasedOnInputType()
+    }
+}
+
+//validation and formatting
+extension FormTextFieldTableViewCell {
+    func formatTextFieldBasedOnInputType() {
+        switch self.inputType {
+        case .unspecifiedText:
+            self.textField.textContentType = UITextContentType("")
+            self.textField.keyboardType = .default
+            self.textField.autocapitalizationType = .sentences
+            break
+        case .email:
+            self.textField.textContentType = UITextContentType.emailAddress
+            self.textField.keyboardType = .emailAddress
+            self.textField.autocapitalizationType = .none
+            break
+        case .phoneNumber:
+            self.textField.textContentType = UITextContentType.telephoneNumber
+            self.textField.keyboardType = .phonePad
+            self.textField.autocapitalizationType = .none
+            break
+        case .fullName:
+            self.textField.textContentType = UITextContentType.name
+            self.textField.keyboardType = .asciiCapable
+            self.textField.autocapitalizationType = .words
+            break
+        case .jobTitle:
+            self.textField.textContentType = UITextContentType.jobTitle
+            self.textField.keyboardType = .default
+            self.textField.autocapitalizationType = .words
+            break
+        }
     }
 }
