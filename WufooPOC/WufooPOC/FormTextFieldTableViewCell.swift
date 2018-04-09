@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
     
@@ -40,7 +41,7 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        self.textField.delegate = self
     }
     
     private func configureView() {
@@ -50,7 +51,7 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
 }
 
 //validation and formatting
-extension FormTextFieldTableViewCell {
+extension FormTextFieldTableViewCell: UITextFieldDelegate {
     func formatTextFieldBasedOnInputType() {
         switch self.inputType {
         case .unspecifiedText:
@@ -78,6 +79,31 @@ extension FormTextFieldTableViewCell {
             self.textField.keyboardType = .default
             self.textField.autocapitalizationType = .words
             break
+        }
+    }
+
+    //textField delegate
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        switch self.inputType {
+        case .unspecifiedText:
+            return true
+        case .email:
+            return true
+        case .phoneNumber:
+            if string == "" || string == " " {
+                return true
+            }
+            let fullString = textField.text! + string
+            if fullString.count > 15 {
+                return false
+            }
+            textField.text = fullString.formatStringToPhoneNumber()
+            return false
+        case .fullName:
+            return true
+        case .jobTitle:
+            return true
         }
     }
 }

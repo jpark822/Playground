@@ -54,6 +54,12 @@ extension FormTableViewController {
             textCell.formQuestion = questionModel
             self.formQuestionCells.append(textCell)
             return textCell
+        case .phoneNumber:
+            let phoneNumberTextCell = Bundle.main.loadNibNamed("FormTextFieldTableViewCell", owner: self, options: [:])?.first as! FormTextFieldTableViewCell
+            phoneNumberTextCell.formQuestion = questionModel
+            phoneNumberTextCell.inputType = .phoneNumber
+            self.formQuestionCells.append(phoneNumberTextCell)
+            return phoneNumberTextCell
         case .number:
             let numberCell = UITableViewCell(style: .default, reuseIdentifier: "questionCell")
             self.formQuestionCells.append(numberCell)

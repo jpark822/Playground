@@ -16,6 +16,7 @@ struct FormQuestionModel {
         case radio = "radio"
         case select = "select"
         case textView = "textarea"
+        case phoneNumber = "phone"
     }
     
     let questionName:String
