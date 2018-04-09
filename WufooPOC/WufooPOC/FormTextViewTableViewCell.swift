@@ -13,6 +13,7 @@ class FormTextViewTableViewCell: UITableViewCell, FormItemView {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     
+    var delegate: FormItemViewDelegate?
     var formQuestion: FormQuestionModel! {
         didSet {
             self.configureView()

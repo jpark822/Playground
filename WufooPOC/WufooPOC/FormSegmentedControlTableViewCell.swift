@@ -9,15 +9,16 @@
 import UIKit
 
 class FormSegmentedControlTableViewCell: UITableViewCell, FormItemView {
+
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    var delegate: FormItemViewDelegate?
     var formQuestion: FormQuestionModel! {
         didSet {
             self.configureView()
         }
     }
-
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     var mainInputControl: UIView {
         return self.segmentedControl

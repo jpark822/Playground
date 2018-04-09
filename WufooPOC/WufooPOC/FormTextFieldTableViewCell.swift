@@ -22,6 +22,7 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
         case jobTitle
     }
     
+    var delegate: FormItemViewDelegate?
     var formQuestion: FormQuestionModel! {
         didSet {
             self.configureView()
