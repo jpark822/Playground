@@ -119,4 +119,12 @@ extension FormTextFieldTableViewCell: UITextFieldDelegate {
             return true
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let delegate = self.delegate {
+            self.textField.resignFirstResponder()
+            delegate.formItemViewDidPressReturn(self)
+        }
+        return false
+    }
 }

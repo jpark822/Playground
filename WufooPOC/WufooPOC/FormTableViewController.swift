@@ -52,12 +52,14 @@ extension FormTableViewController {
         case .textField:
             let textCell = Bundle.main.loadNibNamed("FormTextFieldTableViewCell", owner: self, options: [:])?.first as! FormTextFieldTableViewCell
             textCell.formQuestion = questionModel
+            textCell.delegate = self
             self.formQuestionCells.append(textCell)
             return textCell
         case .phoneNumber:
             let phoneNumberTextCell = Bundle.main.loadNibNamed("FormTextFieldTableViewCell", owner: self, options: [:])?.first as! FormTextFieldTableViewCell
             phoneNumberTextCell.formQuestion = questionModel
             phoneNumberTextCell.inputType = .phoneNumber
+            phoneNumberTextCell.delegate = self
             self.formQuestionCells.append(phoneNumberTextCell)
             return phoneNumberTextCell
         case .number:
@@ -69,16 +71,19 @@ extension FormTableViewController {
             let radioCell = Bundle.main.loadNibNamed("FormSegmentedControlTableViewCell", owner: self, options: [:])?.first as! FormSegmentedControlTableViewCell
             self.formQuestionCells.append(radioCell)
             radioCell.formQuestion = questionModel
+            radioCell.delegate = self
             return radioCell
         case .select:
             let dropDownCell = Bundle.main.loadNibNamed("FormPickerTableViewCell", owner: self, options: [:])?.first as! FormPickerTableViewCell
             self.formQuestionCells.append(dropDownCell)
             dropDownCell.formQuestion = questionModel
+            dropDownCell.delegate = self
             return dropDownCell
         case .textView:
             let textViewCell = Bundle.main.loadNibNamed("FormTextViewTableViewCell", owner: self, options: [:])?.first as! FormTextViewTableViewCell
             self.formQuestionCells.append(textViewCell)
             textViewCell.formQuestion = questionModel
+            textViewCell.delegate = self
             return textViewCell
         case .unknown:
             let unknownCell = UITableViewCell(style: .default, reuseIdentifier: "questionCell")
@@ -87,7 +92,25 @@ extension FormTableViewController {
             return unknownCell
         }
     }
-    
+}
+
+extension FormTableViewController:FormItemViewDelegate {
+    func formItemViewDidPressReturn(_ formItemView: FormItemView) {
+        guard let castedFormCell = formItemView as? UITableViewCell else {
+            return
+        }
+        guard let indexOfCell = self.formQuestionCells.index(of: castedFormCell) else {
+            return
+        }
+        let nextIndex = indexOfCell + 1
+        guard self.formQuestionCells.count > nextIndex else {
+            return
+        }
+        guard let nextCellAsFormItem = self.formQuestionCells[nextIndex] as? FormItemView else {
+            return
+        }
+        nextCellAsFormItem.mainInputControl.becomeFirstResponder()
+    }
 }
 
 
