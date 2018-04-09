@@ -31,7 +31,19 @@ class FormTextFieldTableViewCell: UITableViewCell, FormItemView {
         return self.textField
     }
     var formItemOutputValue: String? {
-        return self.textField.text
+        switch self.inputType {
+        case .unspecifiedText:
+            return self.textField.text
+        case .email:
+            return self.textField.text
+        case .phoneNumber:
+            return self.textField.text?.components(separatedBy: CharacterSet.decimalDigits.inverted)
+                .joined()
+        case .fullName:
+            return self.textField.text
+        case .jobTitle:
+            return self.textField.text
+        }
     }
     var inputType:TextInputType = .unspecifiedText {
         didSet {
