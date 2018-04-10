@@ -29,6 +29,32 @@ class FormTableViewController: UITableViewController {
             }
         }
     }
+    
+    @IBAction func submitPressed(_ sender: Any) {
+        var answerDict = [String:String]()
+        var index = 0
+        for cell in self.formQuestionCells {
+            guard let castedCell = cell as? FormItemView else {
+                continue
+            }
+            let questionItem = self.questionModels[index]
+            
+            answerDict[questionItem.id] = castedCell.formItemOutputValue
+            
+            index += 1
+        }
+        
+        AlamofireManager.sharedInstace.submitAnswers(answerDict) { (success, errror) in
+//            if success {
+//                self.dismiss(animated: true)
+//            }
+//            else {
+//                //show alert dialgue
+//            }
+        }
+    }
+    
+    
 }
 
 //Datasource

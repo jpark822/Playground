@@ -19,6 +19,7 @@ struct FormQuestionModel {
         case phoneNumber = "phone"
     }
     
+    let id:String
     let questionName:String
     let answerOptions:[String]
     let questionType:QuestionType
@@ -26,6 +27,7 @@ struct FormQuestionModel {
     
 
     init(jsonDict:[String:Any]) {
+        self.id = jsonDict["ID"] as? String ?? ""
         self.questionName = jsonDict["Title"] as? String ?? ""
         if let typeString = jsonDict["Type"] as? String,
             let convertedType = QuestionType(rawValue: typeString) {

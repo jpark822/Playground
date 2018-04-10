@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-//        self.postFormEntryAlamofire()
+        self.getForm()
         
     }
 
@@ -79,6 +79,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func hardcodedPressed(_ sender: Any) {
+        let viewcontroller = UIStoryboard(name: "Hardcoded", bundle: nil).instantiateInitialViewController()
+        self.present(viewcontroller!, animated: true)
+    }
     
     
     
