@@ -18,8 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Field Entry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxE-3X-Zdg">
-                        <rect key="frame" x="128.5" y="11" width="118" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Field Entry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxE-3X-Zdg">
+                        <rect key="frame" x="16" y="11" width="344" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,9 +32,11 @@
                     </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="XxE-3X-Zdg" firstAttribute="leading" secondItem="tuT-QD-Xnf" secondAttribute="leading" constant="16" id="Acb-xu-zyl"/>
                     <constraint firstItem="svl-dS-6JF" firstAttribute="top" secondItem="XxE-3X-Zdg" secondAttribute="bottom" constant="8" id="HE0-O4-P0g"/>
                     <constraint firstItem="XxE-3X-Zdg" firstAttribute="top" secondItem="tuT-QD-Xnf" secondAttribute="top" constant="11" id="HhY-0A-4Qe"/>
                     <constraint firstItem="svl-dS-6JF" firstAttribute="leading" secondItem="tuT-QD-Xnf" secondAttribute="leading" constant="16" id="OUj-fJ-ZAm"/>
+                    <constraint firstAttribute="trailing" secondItem="XxE-3X-Zdg" secondAttribute="trailing" constant="15" id="alm-aQ-a55"/>
                     <constraint firstAttribute="bottom" secondItem="svl-dS-6JF" secondAttribute="bottom" constant="13.5" id="c8Y-n5-v2Y"/>
                     <constraint firstItem="XxE-3X-Zdg" firstAttribute="centerX" secondItem="tuT-QD-Xnf" secondAttribute="centerX" id="chc-71-JYl"/>
                     <constraint firstAttribute="trailing" secondItem="svl-dS-6JF" secondAttribute="trailing" constant="16" id="itp-Zo-jjx"/>
@@ -44,6 +46,7 @@
                 <outlet property="questionLabel" destination="XxE-3X-Zdg" id="6qa-8A-xZH"/>
                 <outlet property="textField" destination="svl-dS-6JF" id="w4N-eA-oZB"/>
             </connections>
+            <point key="canvasLocation" x="26.5" y="52"/>
         </tableViewCell>
     </objects>
 </document>

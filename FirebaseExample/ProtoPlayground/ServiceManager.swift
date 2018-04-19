@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class ServiceManager: NSObject {
     static let sharedInstance = ServiceManager()
@@ -25,6 +26,13 @@ extension ServiceManager {
         let databaseItemRef = firebaseItemListReference.child(item.name)
         
         databaseItemRef.setValue(item.toFirebaseConsumable())
+    }
+    
+    func getItemsAPI() {
+        Alamofire.request("https://playground-38984.firebaseio.com/userAddeditems.json", method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+            print(response)
+        }
+        
     }
     
 }

@@ -49,5 +49,21 @@ class RefererContactViewController: UIViewController, UITextFieldDelegate {
         
         return false
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard textField == self.numberTextField else {
+            return true
+        }
+        
+        if string == "" || string == " " {
+            return true
+        }
+        let fullString = textField.text! + string
+        if fullString.count > 15 {
+            return false
+        }
+        textField.text = fullString.formatStringToPhoneNumber()
+        return false
+    }
 
 }

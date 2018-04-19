@@ -12,6 +12,7 @@ class FirebaseTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ServiceManager.sharedInstance.getItemsAPI()
     }
 
 }

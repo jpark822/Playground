@@ -15,6 +15,10 @@
 		4E6D8ACD207C427B006789E1 /* NeedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D8ACC207C427B006789E1 /* NeedTypeViewController.swift */; };
 		4E6D8ACF207C43AB006789E1 /* TellUsMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D8ACE207C43AB006789E1 /* TellUsMoreViewController.swift */; };
 		4E6D8AD1207CDCD1006789E1 /* MainContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D8AD0207CDCD1006789E1 /* MainContactInfoViewController.swift */; };
+		4E6D8AD42087ECE0006789E1 /* SegmentedForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6D8AD32087ECE0006789E1 /* SegmentedForm.storyboard */; };
+		4E6D8AD62087F112006789E1 /* SegmentedFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D8AD52087F112006789E1 /* SegmentedFormViewController.swift */; };
+		4E6D8B0C20880FCE006789E1 /* SegmentedFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D8B0B20880FCE006789E1 /* SegmentedFormModel.swift */; };
+		4E6D8B0E2088182F006789E1 /* segmentedForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E6D8B0D2088182F006789E1 /* segmentedForm.json */; };
 		4EB32E6E20759E69002F4DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E6D20759E69002F4DBB /* AppDelegate.swift */; };
 		4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E6F20759E69002F4DBB /* ViewController.swift */; };
 		4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB32E7120759E69002F4DBB /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		4E6D8ACC207C427B006789E1 /* NeedTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedTypeViewController.swift; sourceTree = "<group>"; };
 		4E6D8ACE207C43AB006789E1 /* TellUsMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellUsMoreViewController.swift; sourceTree = "<group>"; };
 		4E6D8AD0207CDCD1006789E1 /* MainContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactInfoViewController.swift; sourceTree = "<group>"; };
+		4E6D8AD32087ECE0006789E1 /* SegmentedForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegmentedForm.storyboard; sourceTree = "<group>"; };
+		4E6D8AD52087F112006789E1 /* SegmentedFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedFormViewController.swift; sourceTree = "<group>"; };
+		4E6D8B0B20880FCE006789E1 /* SegmentedFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedFormModel.swift; sourceTree = "<group>"; };
+		4E6D8B0D2088182F006789E1 /* segmentedForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = segmentedForm.json; sourceTree = "<group>"; };
 		4EB32E6A20759E69002F4DBB /* WufooPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WufooPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB32E6D20759E69002F4DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB32E6F20759E69002F4DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,24 @@
 			name = HardcodedPOC;
 			sourceTree = "<group>";
 		};
+		4E6D8AD22087EC5F006789E1 /* SegmentedForm */ = {
+			isa = PBXGroup;
+			children = (
+				4E6D8B0D2088182F006789E1 /* segmentedForm.json */,
+				4E6D8AD32087ECE0006789E1 /* SegmentedForm.storyboard */,
+				4E6D8AD52087F112006789E1 /* SegmentedFormViewController.swift */,
+			);
+			name = SegmentedForm;
+			sourceTree = "<group>";
+		};
+		4E6D8B0A20880FBE006789E1 /* SegmentedForm */ = {
+			isa = PBXGroup;
+			children = (
+				4E6D8B0B20880FCE006789E1 /* SegmentedFormModel.swift */,
+			);
+			name = SegmentedForm;
+			sourceTree = "<group>";
+		};
 		4EB32E6120759E69002F4DBB = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +180,7 @@
 		4EB32E842078233B002F4DBB /* FormPOC */ = {
 			isa = PBXGroup;
 			children = (
+				4E6D8AD22087EC5F006789E1 /* SegmentedForm */,
 				4EEC37E3207941EF0068873D /* Model */,
 				4EEC37D82079168C0068873D /* Form Cells */,
 				4EEC37D42079139B0068873D /* FormTableViewController.swift */,
@@ -180,6 +207,7 @@
 		4EEC37E3207941EF0068873D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E6D8B0A20880FBE006789E1 /* SegmentedForm */,
 				4EEC37E4207942040068873D /* FormQuestionModel.swift */,
 			);
 			name = Model;
@@ -267,6 +295,8 @@
 				4EB32E7820759E69002F4DBB /* LaunchScreen.storyboard in Resources */,
 				4E492C32207C386A002E0F9A /* Hardcoded.storyboard in Resources */,
 				4EB32E7520759E69002F4DBB /* Assets.xcassets in Resources */,
+				4E6D8AD42087ECE0006789E1 /* SegmentedForm.storyboard in Resources */,
+				4E6D8B0E2088182F006789E1 /* segmentedForm.json in Resources */,
 				4EE059E8207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib in Resources */,
 				4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */,
 				4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */,
@@ -338,6 +368,7 @@
 			files = (
 				4EEC37E0207940C80068873D /* FormSegmentedControlTableViewCell.swift in Sources */,
 				4EE059E6207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift in Sources */,
+				4E6D8B0C20880FCE006789E1 /* SegmentedFormModel.swift in Sources */,
 				4EB32E832076DE65002F4DBB /* User.swift in Sources */,
 				4EEC37E5207942040068873D /* FormQuestionModel.swift in Sources */,
 				4E6D8AD1207CDCD1006789E1 /* MainContactInfoViewController.swift in Sources */,
@@ -345,6 +376,7 @@
 				4EEC37D7207914850068873D /* FormItemView.swift in Sources */,
 				4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */,
 				4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */,
+				4E6D8AD62087F112006789E1 /* SegmentedFormViewController.swift in Sources */,
 				4E6D8ACD207C427B006789E1 /* NeedTypeViewController.swift in Sources */,
 				4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */,
 				4EEC37DC20791E880068873D /* AlamofireManager.swift in Sources */,

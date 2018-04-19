@@ -1,73 +1,47 @@
 //
-//  FormTableViewController.swift
+//  SegmentedFormViewController.swift
 //  WufooPOC
 //
-//  Created by Jay Park on 4/7/18.
+//  Created by Jay Park on 4/18/18.
 //  Copyright © 2018 ThoughtSeize. All rights reserved.
 //
 
 import UIKit
 
-class FormTableViewController: UITableViewController {
+class SegmentedFormViewController: UIViewController {
+
+    @IBOutlet weak var tableView: UITableView!
     
     var questionModels = [FormQuestionModel]()
     var formQuestionCells = [UITableViewCell]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 60
         
-        NetworkManager.sharedInstace.getFormAlamofire { (formQuestionModels, error) in
-            if let error = error {
-                print(error)
-            }
-            
-            if let formQuestionModels = formQuestionModels {
-                self.questionModels = formQuestionModels
-                self.tableView.reloadData()
-            }
-        }
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditingInTableView))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
-    @IBAction func submitPressed(_ sender: Any) {
-        var answerDict = [String:String]()
-        var index = 0
-        for cell in self.formQuestionCells {
-            guard let castedCell = cell as? FormItemView else {
-                continue
-            }
-            let questionItem = self.questionModels[index]
-            
-            answerDict[questionItem.id] = castedCell.formItemOutputValue
-            
-            index += 1
-        }
-        
-        NetworkManager.sharedInstace.submitAnswers(answerDict) { (success, errror) in
-//            if success {
-//                self.dismiss(animated: true)
-//            }
-//            else {
-//                //show alert dialgue
-//            }
-        }
+    @objc func endEditingInTableView() {
+        self.view.endEditing(true)
     }
-    
-    
+
+
 }
 
-//Datasource
-extension FormTableViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
+extension SegmentedFormViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.questionModels.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if self.formQuestionCells.count > indexPath.row {
             return self.formQuestionCells[indexPath.row]
         }
@@ -120,7 +94,7 @@ extension FormTableViewController {
     }
 }
 
-extension FormTableViewController:FormItemViewDelegate {
+extension SegmentedFormViewController:FormItemViewDelegate {
     func formItemViewDidPressReturn(_ formItemView: FormItemView) {
         guard let castedFormCell = formItemView as? UITableViewCell else {
             return
@@ -138,5 +112,3 @@ extension FormTableViewController:FormItemViewDelegate {
         nextCellAsFormItem.mainInputControl.becomeFirstResponder()
     }
 }
-
-

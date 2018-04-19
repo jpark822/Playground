@@ -49,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6D8AD7208805BA006789E1 /* FormPOC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FormPOC;
+			sourceTree = "<group>";
+		};
 		4EB32E2D2073F7B7002F4DBB = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +75,7 @@
 		4EB32E382073F7B7002F4DBB /* TGK */ = {
 			isa = PBXGroup;
 			children = (
+				4E6D8AD7208805BA006789E1 /* FormPOC */,
 				4EB32E5820741656002F4DBB /* Views */,
 				4EB32E4C2073F9C1002F4DBB /* ViewControllers */,
 				4EB32E392073F7B7002F4DBB /* AppDelegate.swift */,
@@ -322,7 +330,7 @@
 				DEVELOPMENT_TEAM = VZBY3CL334;
 				INFOPLIST_FILE = TGK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtseize.TGK.TGK;
+				PRODUCT_BUNDLE_IDENTIFIER = org.thegivingkitchen.tgkapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +345,7 @@
 				DEVELOPMENT_TEAM = VZBY3CL334;
 				INFOPLIST_FILE = TGK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtseize.TGK.TGK;
+				PRODUCT_BUNDLE_IDENTIFIER = org.thegivingkitchen.tgkapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

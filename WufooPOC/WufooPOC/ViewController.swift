@@ -24,7 +24,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        self.getForm()
+//        self.getForm()
+        NetworkManager.sharedInstace.getSegmentedForm { (segmentedForm, error) in
+            
+        }
         
     }
 

@@ -10,10 +10,10 @@ import Foundation
 import Alamofire
 
 //could rename to serivcemanager or networkmanager
-class AlamofireManager: NSObject {
+class NetworkManager: NSObject {
     fileprivate static let wufooAPIKey = "NNAU-AZAS-13TW-IRUX:welcometotgk12345!"
     
-    static let sharedInstace = AlamofireManager()
+    static let sharedInstace = NetworkManager()
     
     var sessionManager = SessionManager(configuration: .default)
     var sessionDelegate: Alamofire.SessionDelegate!
@@ -32,10 +32,8 @@ class AlamofireManager: NSObject {
         }
     }
     
-    
-    
     func getFormAlamofire(completion:@escaping ([FormQuestionModel]?, Error?)->Void) {
-        self.sessionManager.request("https://jparksps.wufoo.com.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/fields.json", headers: ["Authorization":"Basic \(AlamofireManager.wufooAPIKey.base64String)"]).responseJSON { (response) in
+        self.sessionManager.request("https://jparksps.wufoo.com.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/fields.json", headers: ["Authorization":"Basic \(NetworkManager.wufooAPIKey.base64String)"]).responseJSON { (response) in
             print(response)
             
             if let error = response.result.error {
@@ -62,7 +60,7 @@ class AlamofireManager: NSObject {
     }
     
     func submitAnswers(_ answerDict:[String:String], completion:@escaping (Bool, Error?)->Void) {
-        self.sessionManager.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", method: .post, parameters: answerDict, encoding: URLEncoding.default, headers: ["Authorization":"Basic \(AlamofireManager.wufooAPIKey.base64String)"]).responseJSON { (response) in
+        self.sessionManager.request("https://jparksps.wufoo.com/api/v3/forms/z1dxnntq1ft2smg/entries.json", method: .post, parameters: answerDict, encoding: URLEncoding.default, headers: ["Authorization":"Basic \(NetworkManager.wufooAPIKey.base64String)"]).responseJSON { (response) in
             print(response)
             if let error = response.result.error {
                 completion(false, error)
@@ -71,6 +69,29 @@ class AlamofireManager: NSObject {
                 completion(true, nil)
             }
         }
+    }
+    
+    func getSegmentedForm(completion: @escaping (SegmentedFormModel?, Error?)->Void) {
+        
+        if let path = Bundle.main.path(forResource: "segmentedForm", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                let jsonObj = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String:Any]
+                let segmentedForm = SegmentedFormModel(jsonDict: jsonObj)
+                completion(segmentedForm, nil)
+                
+            }
+            catch let error {
+                print("parse error: \(error.localizedDescription)")
+                completion(nil, nil)
+            }
+        }
+        else {
+            print("Invalid filename/path.")
+            completion(nil, nil)
+        }
+
+        
     }
 }
 

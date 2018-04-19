@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
         
-        _ = FavoritesManager.sharedInstance
+        
         
         return true
     }
