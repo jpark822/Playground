@@ -39,6 +39,8 @@
 		4EEC37E0207940C80068873D /* FormSegmentedControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37DF207940C80068873D /* FormSegmentedControlTableViewCell.swift */; };
 		4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37E1207941CF0068873D /* FormTextFieldTableViewCell.swift */; };
 		4EEC37E5207942040068873D /* FormQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37E4207942040068873D /* FormQuestionModel.swift */; };
+		C0F61C2A2088E8B8004D6260 /* FormQuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F61C292088E8B8004D6260 /* FormQuestionAnswer.swift */; };
+		C0F61C2C2088EA7C004D6260 /* SegmentedFormNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F61C2B2088EA7C004D6260 /* SegmentedFormNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		4EEC37E4207942040068873D /* FormQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormQuestionModel.swift; sourceTree = "<group>"; };
 		6F0FEFCAAE295F265234E5C0 /* Pods_WufooPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WufooPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9162B9856AE1292641B6881F /* Pods-WufooPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WufooPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WufooPOC/Pods-WufooPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		C0F61C292088E8B8004D6260 /* FormQuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormQuestionAnswer.swift; sourceTree = "<group>"; };
+		C0F61C2B2088EA7C004D6260 /* SegmentedFormNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedFormNavigationController.swift; sourceTree = "<group>"; };
 		F11BC364692F183B39F8EB1A /* Pods-WufooPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WufooPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-WufooPOC/Pods-WufooPOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 				4E6D8B0D2088182F006789E1 /* segmentedForm.json */,
 				4E6D8AD32087ECE0006789E1 /* SegmentedForm.storyboard */,
 				4E6D8AD52087F112006789E1 /* SegmentedFormViewController.swift */,
+				C0F61C2B2088EA7C004D6260 /* SegmentedFormNavigationController.swift */,
 			);
 			name = SegmentedForm;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			children = (
 				4E6D8B0A20880FBE006789E1 /* SegmentedForm */,
 				4EEC37E4207942040068873D /* FormQuestionModel.swift */,
+				C0F61C292088E8B8004D6260 /* FormQuestionAnswer.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -242,7 +248,6 @@
 				4EB32E6720759E69002F4DBB /* Frameworks */,
 				4EB32E6820759E69002F4DBB /* Resources */,
 				E7755E8260370EDE9EBE85B2 /* [CP] Embed Pods Frameworks */,
-				E5E0A944C96BE193A332B4CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,21 +331,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5E0A944C96BE193A332B4CB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WufooPOC/Pods-WufooPOC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E7755E8260370EDE9EBE85B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +363,7 @@
 				4EEC37E5207942040068873D /* FormQuestionModel.swift in Sources */,
 				4E6D8AD1207CDCD1006789E1 /* MainContactInfoViewController.swift in Sources */,
 				4EEC37D52079139B0068873D /* FormTableViewController.swift in Sources */,
+				C0F61C2A2088E8B8004D6260 /* FormQuestionAnswer.swift in Sources */,
 				4EEC37D7207914850068873D /* FormItemView.swift in Sources */,
 				4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */,
 				4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */,
@@ -381,6 +372,7 @@
 				4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */,
 				4EEC37DC20791E880068873D /* AlamofireManager.swift in Sources */,
 				4E492C34207C395A002E0F9A /* SelectRecipientViewController.swift in Sources */,
+				C0F61C2C2088EA7C004D6260 /* SegmentedFormNavigationController.swift in Sources */,
 				4E6D8ACF207C43AB006789E1 /* TellUsMoreViewController.swift in Sources */,
 				4EB32E6E20759E69002F4DBB /* AppDelegate.swift in Sources */,
 				4EEC37DA20791BB70068873D /* String+Base64.swift in Sources */,

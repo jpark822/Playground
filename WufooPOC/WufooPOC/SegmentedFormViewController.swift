@@ -8,12 +8,21 @@
 
 import UIKit
 
+protocol SegmentedFormViewControllerDelegate {
+    func segmentedFormViewController(_ segmentedFormViewController:SegmentedFormViewController, didAdvanceWithAnswers answers:[FormQuestionAnswer])
+}
+
 class SegmentedFormViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    var questionModels = [FormQuestionModel]()
     var formQuestionCells = [UITableViewCell]()
+    
+    var delegate:SegmentedFormViewControllerDelegate?
+    
+    var formPage:SegmentedFormModel.Page!
+    var questionModels:[FormQuestionModel] {
+            return self.formPage.questions
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +38,25 @@ class SegmentedFormViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-
+    @IBAction func nextPressed(_ sender: Any) {
+        var index = 0
+        var questionAnswers = [FormQuestionAnswer]()
+        for cell in self.formQuestionCells {
+            guard let castedCell = cell as? FormItemView,
+            let formItemOutputValue = castedCell.formItemOutputValue else {
+                continue
+            }
+            let questionItem = self.questionModels[index]
+            
+            let questionAnswer = FormQuestionAnswer(wufooFieldID: questionItem.id, userAnswer: formItemOutputValue)
+            questionAnswers.append(questionAnswer)
+            index += 1
+        }
+        
+        if let delegate = self.delegate {
+            delegate.segmentedFormViewController(self, didAdvanceWithAnswers: questionAnswers)
+        }
+    }
 }
 
 extension SegmentedFormViewController: UITableViewDataSource, UITableViewDelegate {
