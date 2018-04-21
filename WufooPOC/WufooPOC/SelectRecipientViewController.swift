@@ -18,6 +18,10 @@ class SelectRecipientViewController: UIViewController, UITableViewDelegate, UITa
         self.tableView.dataSource = self
     }
     
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
     //Tableview
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

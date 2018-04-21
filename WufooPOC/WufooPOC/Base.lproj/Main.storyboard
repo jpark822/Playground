@@ -71,7 +71,7 @@
         <scene sceneID="ZIp-6U-xvL">
             <objects>
                 <tableViewController id="Ela-qc-huC" customClass="FormTableViewController" customModule="WufooPOC" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DTV-jC-csB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DTV-jC-csB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,7 +92,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Assistance Inquiry" id="7in-Ff-6k7">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="nsU-8K-Cj8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="uez-cI-WIy">
+                            <connections>
+                                <action selector="cancelPressed:" destination="Ela-qc-huC" id="chU-CE-Nd5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="done" id="nsU-8K-Cj8">
                             <connections>
                                 <action selector="submitPressed:" destination="Ela-qc-huC" id="g2j-ly-0Wr"/>
                             </connections>

@@ -15,6 +15,10 @@ class FormTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditingForTableView))
+        self.tableView.addGestureRecognizer(tapGesture)
+        
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 60
         
@@ -28,6 +32,14 @@ class FormTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    @objc func endEditingForTableView() {
+        self.tableView.endEditing(true)
+    }
+    
+    @IBAction func cancelPressed(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     @IBAction func submitPressed(_ sender: Any) {

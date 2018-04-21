@@ -70,7 +70,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Ry-xG-Rjc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Request Assitance" id="SMw-mA-06b"/>
+                    <navigationItem key="navigationItem" title="Request Assitance" id="SMw-mA-06b">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="LES-VX-F7k">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="kj9-qV-hY2" id="6Rd-qI-QHK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="jgu-Ov-9t2" id="7wb-KD-wcg"/>
                         <segue destination="pgh-Ji-h0m" kind="show" identifier="selfSegue" id="XOV-8f-MFn"/>
@@ -185,7 +191,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This information is just used for the surrounding area and type of business" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXj-1k-fWn">
-                                <rect key="frame" x="48" y="245" width="278" height="59.666666666666657"/>
+                                <rect key="frame" x="48" y="244.99999999999997" width="278" height="59.666666666666657"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
