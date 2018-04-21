@@ -15,6 +15,8 @@ protocol SegmentedFormViewControllerDelegate {
 class SegmentedFormViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var informationlabel: UILabel!
+    
     var formQuestionCells = [UITableViewCell]()
     
     //dependencies
@@ -35,7 +37,8 @@ class SegmentedFormViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-
+        self.configureView()
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditingInTableView))
         self.view.addGestureRecognizer(tapGesture)
     }
@@ -54,7 +57,8 @@ class SegmentedFormViewController: UIViewController {
     }
     
     func configureView() {
-        self.title = self.formPage.pageTitle
+        self.navigationItem.title = self.formPage.pageTitle
+        self.informationlabel.text = self.formPage.pageInformation
         self.tableView.reloadData()
     }
     

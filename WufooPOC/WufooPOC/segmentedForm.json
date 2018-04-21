@@ -3,6 +3,7 @@
 	"Pages" :	[
 		{
 			"pageTitle" : "Assistance Form",
+            "pageInformation" : "Please tell us about the person in need",
 			"questions" : [
 				{
 					"ID" : "Field1",
@@ -29,6 +30,7 @@
 		},
 		{
 			"pageTitle" : "Contact Info",
+            "pageInformation" : "How can we get in touch with the person in need?",
 			"questions" :[
 				{
 					"ID" : "Field4",
@@ -104,6 +106,7 @@
 		},
 		{
 			"pageTitle" : "Work Info",
+            "pageInformation" : "Where does the person in need work?",
 			"questions" : [
 				{
 					"ID" : "Field6",

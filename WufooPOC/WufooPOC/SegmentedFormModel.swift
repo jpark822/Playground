@@ -32,11 +32,13 @@ struct SegmentedFormModel {
     
     struct Page {
         let pageTitle:String
+        let pageInformation:String
         let questions:[FormQuestionModel]
         
         
         init(jsonDict:[String:Any]) {
             self.pageTitle = jsonDict["pageTitle"] as? String ?? ""
+            self.pageInformation = jsonDict["pageInformation"] as? String ?? ""
             let questionsArray = jsonDict["questions"] as? [[String:Any]] ?? [[String:Any]]()
             
             var questionModels = [FormQuestionModel]()
