@@ -18,6 +18,7 @@ class SegmentedFormViewController: UIViewController {
     var formQuestionCells = [UITableViewCell]()
     
     //dependencies
+    var isLastPageInForm = false
     var delegate:SegmentedFormViewControllerDelegate?
     var formPage:SegmentedFormModel.Page! {
         didSet {
@@ -39,6 +40,19 @@ class SegmentedFormViewController: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var rightBarButtonItem = UIBarButtonItem()
+        if self.isLastPageInForm {
+            rightBarButtonItem = UIBarButtonItem(title: "Submit", style: .done, target: self, action: #selector(advancePageOrSubmit))
+        }
+        else {
+            rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(advancePageOrSubmit))
+        }
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
     func configureView() {
         self.title = self.formPage.pageTitle
         self.tableView.reloadData()
@@ -48,7 +62,7 @@ class SegmentedFormViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    @IBAction func nextPressed(_ sender: Any) {
+    @objc func advancePageOrSubmit(_ sender: Any) {
         var index = 0
         var questionAnswers = [FormQuestionAnswer]()
         for cell in self.formQuestionCells {

@@ -70,17 +70,16 @@ extension SegmentedFormNavigationController:SegmentedFormViewControllerDelegate 
         
         guard let index = self.segmentedFormViewControllers.index(where:  {$0 == segmentedFormViewController}) else {return}
         
-        if self.segmentedFormViewControllers.count > index + 1 {
-            let nextPageVC = self.segmentedFormViewControllers[index + 1]
+        let nextIndex = index + 1
+        if self.segmentedFormViewControllers.count > nextIndex {
+            let nextPageVC = self.segmentedFormViewControllers[nextIndex]
             
-            if self.segmentedFormViewControllers.count - 1 == index {
-                //last page, submit button instead of 'next'
-                
+            if self.segmentedFormViewControllers.count - 1 == nextIndex {
+                nextPageVC.isLastPageInForm = true
             }
             self.pushViewController(nextPageVC, animated: true)
         }
         else {
-            //TODO test to make sure answer fields are correct, also check the bug where 'next' looks grayed out
             self.dismiss(animated: true)
             print("submit here")
         }
