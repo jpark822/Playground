@@ -97,7 +97,7 @@
                                 <action selector="cancelPressed:" destination="Ela-qc-huC" id="chU-CE-Nd5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="done" id="nsU-8K-Cj8">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" style="done" id="nsU-8K-Cj8">
                             <connections>
                                 <action selector="submitPressed:" destination="Ela-qc-huC" id="g2j-ly-0Wr"/>
                             </connections>
