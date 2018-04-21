@@ -26,10 +26,18 @@
                                     <segue destination="Yxq-Ye-Z96" kind="show" id="bMN-b6-JkR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-oT-hGQ">
-                                <rect key="frame" x="146" y="197" width="83" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-wJ-Myb">
+                                <rect key="frame" x="128" y="266" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Native Form"/>
+                                <state key="normal" title="Segmented Form"/>
+                                <connections>
+                                    <action selector="segmentedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KrE-Cs-Znz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vI-oT-hGQ">
+                                <rect key="frame" x="130" y="183" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hardcoded Form"/>
                                 <connections>
                                     <action selector="hardcodedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpe-JC-kMA"/>
                                 </connections>

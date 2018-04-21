@@ -38,7 +38,6 @@
                     <constraint firstItem="svl-dS-6JF" firstAttribute="leading" secondItem="tuT-QD-Xnf" secondAttribute="leading" constant="16" id="OUj-fJ-ZAm"/>
                     <constraint firstAttribute="trailing" secondItem="XxE-3X-Zdg" secondAttribute="trailing" constant="15" id="alm-aQ-a55"/>
                     <constraint firstAttribute="bottom" secondItem="svl-dS-6JF" secondAttribute="bottom" constant="13.5" id="c8Y-n5-v2Y"/>
-                    <constraint firstItem="XxE-3X-Zdg" firstAttribute="centerX" secondItem="tuT-QD-Xnf" secondAttribute="centerX" id="chc-71-JYl"/>
                     <constraint firstAttribute="trailing" secondItem="svl-dS-6JF" secondAttribute="trailing" constant="16" id="itp-Zo-jjx"/>
                 </constraints>
             </tableViewCellContentView>

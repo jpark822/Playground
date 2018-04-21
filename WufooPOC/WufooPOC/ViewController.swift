@@ -87,6 +87,10 @@ class ViewController: UIViewController {
         self.present(viewcontroller!, animated: true)
     }
     
+    @IBAction func segmentedPressed(_ sender: Any) {
+        let viewcontroller = UIStoryboard(name: "SegmentedForm", bundle: nil).instantiateInitialViewController()
+        self.present(viewcontroller!, animated: true)
+    }
     
     
 }

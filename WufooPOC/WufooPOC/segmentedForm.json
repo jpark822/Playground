@@ -5,21 +5,21 @@
 			"pageTitle" : "Assistance Form",
 			"questions" : [
 				{
-					"ID" : "Field6",
+					"ID" : "Field1",
 					"Title" : "Name of person in need",
 					"Type" : "text",
 					"Instructions" : "",
 					"IsRequired" : 1		
 				},
 				{
-					"ID" : "Field6",
+					"ID" : "Field2",
 					"Title" : "Number of person in need",
 					"Type" : "phone",
 					"Instructions" : "",
 					"IsRequired" : 1		
 				},
 				{
-					"ID" : "Field6",
+					"ID" : "Field3",
 					"Title" : "Email of person in need",
 					"Type" : "text",
 					"Instructions" : "",
@@ -31,7 +31,7 @@
 			"pageTitle" : "Contact Info",
 			"questions" :[
 				{
-					"ID" : "Field6",
+					"ID" : "Field4",
 					"Title" : "Best method of contact for person in need",
 					"Type" : "radio",
 					"Instructions" : "",
@@ -53,7 +53,7 @@
 				},
 
 				{
-					"ID" : "Field6",
+					"ID" : "Field5",
 					"Title" : "County of the person in need",
 					"Type" : "select",
 					"Instructions" : "",

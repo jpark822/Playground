@@ -17,9 +17,14 @@ class SegmentedFormViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var formQuestionCells = [UITableViewCell]()
     
+    //dependencies
     var delegate:SegmentedFormViewControllerDelegate?
-    
-    var formPage:SegmentedFormModel.Page!
+    var formPage:SegmentedFormModel.Page! {
+        didSet {
+            guard self.isViewLoaded else {return}
+            self.configureView()
+        }
+    }
     var questionModels:[FormQuestionModel] {
             return self.formPage.questions
     }
@@ -32,6 +37,11 @@ class SegmentedFormViewController: UIViewController {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditingInTableView))
         self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    func configureView() {
+        self.title = self.formPage.pageTitle
+        self.tableView.reloadData()
     }
     
     @objc func endEditingInTableView() {
