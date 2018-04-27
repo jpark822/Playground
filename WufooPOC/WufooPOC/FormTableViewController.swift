@@ -117,6 +117,12 @@ extension FormTableViewController {
             dropDownCell.formQuestion = questionModel
             dropDownCell.delegate = self
             return dropDownCell
+        case .tableSingleSelect:
+            let tableSelectCell = Bundle.main.loadNibNamed("FormListSelectTableViewCell", owner: self, options: [:])?.first as! FormListSelectTableViewCell
+            self.formQuestionCells.append(tableSelectCell)
+            tableSelectCell.formQuestion = questionModel
+            tableSelectCell.delegate = self
+            return tableSelectCell
         case .textView:
             let textViewCell = Bundle.main.loadNibNamed("FormTextViewTableViewCell", owner: self, options: [:])?.first as! FormTextViewTableViewCell
             self.formQuestionCells.append(textViewCell)

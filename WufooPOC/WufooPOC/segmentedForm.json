@@ -116,6 +116,36 @@
 					"IsRequired" : 1		
 				}
 			]
+		},
+		{
+			"pageTitle" : "Table select",
+            "pageInformation" : "Will this work?",
+			"questions" :[
+				{
+					"ID" : "Field7",
+					"Title" : "Select from the table",
+					"Type" : "tableSingleSelect",
+					"Instructions" : "",
+					"IsRequired" : 1,
+					"Choices" : [
+						{	
+							"Label" : "County 1"
+						},
+						{	
+							"Label" : "County 2"
+						},
+						{	
+							"Label" : "County 3"
+						},
+						{	
+							"Label" : "County 4"
+						},
+						{	
+							"Label" : "County 5"
+						}
+					]
+				}
+			]
 		}
 	]
 }
