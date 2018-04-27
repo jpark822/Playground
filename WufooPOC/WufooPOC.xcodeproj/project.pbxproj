@@ -39,8 +39,6 @@
 		4EEC37E0207940C80068873D /* FormSegmentedControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37DF207940C80068873D /* FormSegmentedControlTableViewCell.swift */; };
 		4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37E1207941CF0068873D /* FormTextFieldTableViewCell.swift */; };
 		4EEC37E5207942040068873D /* FormQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37E4207942040068873D /* FormQuestionModel.swift */; };
-		C00C06A420925B2300D137B4 /* FormListSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00C06A320925B2300D137B4 /* FormListSelectTableViewCell.xib */; };
-		C00C06A620925B3500D137B4 /* FormListSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C06A520925B3500D137B4 /* FormListSelectTableViewCell.swift */; };
 		C0F61C2A2088E8B8004D6260 /* FormQuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F61C292088E8B8004D6260 /* FormQuestionAnswer.swift */; };
 		C0F61C2C2088EA7C004D6260 /* SegmentedFormNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F61C2B2088EA7C004D6260 /* SegmentedFormNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -81,8 +79,6 @@
 		4EEC37E4207942040068873D /* FormQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormQuestionModel.swift; sourceTree = "<group>"; };
 		6F0FEFCAAE295F265234E5C0 /* Pods_WufooPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WufooPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9162B9856AE1292641B6881F /* Pods-WufooPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WufooPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WufooPOC/Pods-WufooPOC.debug.xcconfig"; sourceTree = "<group>"; };
-		C00C06A320925B2300D137B4 /* FormListSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormListSelectTableViewCell.xib; sourceTree = "<group>"; };
-		C00C06A520925B3500D137B4 /* FormListSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListSelectTableViewCell.swift; sourceTree = "<group>"; };
 		C0F61C292088E8B8004D6260 /* FormQuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormQuestionAnswer.swift; sourceTree = "<group>"; };
 		C0F61C2B2088EA7C004D6260 /* SegmentedFormNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedFormNavigationController.swift; sourceTree = "<group>"; };
 		F11BC364692F183B39F8EB1A /* Pods-WufooPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WufooPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-WufooPOC/Pods-WufooPOC.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,8 +205,6 @@
 				4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */,
 				4EE059E5207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift */,
 				4EE059E7207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib */,
-				C00C06A520925B3500D137B4 /* FormListSelectTableViewCell.swift */,
-				C00C06A320925B2300D137B4 /* FormListSelectTableViewCell.xib */,
 			);
 			name = "Form Cells";
 			sourceTree = "<group>";
@@ -312,7 +306,6 @@
 				4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */,
 				4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */,
 				4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */,
-				C00C06A420925B2300D137B4 /* FormListSelectTableViewCell.xib in Resources */,
 				4EE059E0207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +369,6 @@
 				4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */,
 				4E6D8AD62087F112006789E1 /* SegmentedFormViewController.swift in Sources */,
 				4E6D8ACD207C427B006789E1 /* NeedTypeViewController.swift in Sources */,
-				C00C06A620925B3500D137B4 /* FormListSelectTableViewCell.swift in Sources */,
 				4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */,
 				4EEC37DC20791E880068873D /* AlamofireManager.swift in Sources */,
 				4E492C34207C395A002E0F9A /* SelectRecipientViewController.swift in Sources */,
