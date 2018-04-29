@@ -26,6 +26,8 @@
 		4EB32E7820759E69002F4DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB32E7620759E69002F4DBB /* LaunchScreen.storyboard */; };
 		4EB32E812076CFCF002F4DBB /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E802076CFCF002F4DBB /* ServiceManager.swift */; };
 		4EB32E832076DE65002F4DBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E822076DE65002F4DBB /* User.swift */; };
+		4ED815112093C04F0034EF6E /* FormListSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED815102093C04F0034EF6E /* FormListSelectTableViewCell.xib */; };
+		4ED815132093C05F0034EF6E /* FormListSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED815122093C05F0034EF6E /* FormListSelectTableViewCell.swift */; };
 		4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059DC207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib */; };
 		4EE059E0207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE059DF207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib */; };
 		4EE059E2207AC34200D4DDB0 /* FormPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */; };
@@ -64,6 +66,8 @@
 		4EB32E7920759E69002F4DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB32E802076CFCF002F4DBB /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		4EB32E822076DE65002F4DBB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4ED815102093C04F0034EF6E /* FormListSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormListSelectTableViewCell.xib; sourceTree = "<group>"; };
+		4ED815122093C05F0034EF6E /* FormListSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListSelectTableViewCell.swift; sourceTree = "<group>"; };
 		4EE059DC207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		4EE059DF207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
 		4EE059E1207AC34200D4DDB0 /* FormPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPickerTableViewCell.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				4EE059E3207AC34C00D4DDB0 /* FormPickerTableViewCell.xib */,
 				4EE059E5207ACD0000D4DDB0 /* FormTextViewTableViewCell.swift */,
 				4EE059E7207ACF0300D4DDB0 /* FormTextViewTableViewCell.xib */,
+				4ED815122093C05F0034EF6E /* FormListSelectTableViewCell.swift */,
+				4ED815102093C04F0034EF6E /* FormListSelectTableViewCell.xib */,
 			);
 			name = "Form Cells";
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				4EB32E7320759E69002F4DBB /* Main.storyboard in Resources */,
 				4EE059E4207AC34D00D4DDB0 /* FormPickerTableViewCell.xib in Resources */,
 				4EE059DD207A9B1600D4DDB0 /* FormTextFieldTableViewCell.xib in Resources */,
+				4ED815112093C04F0034EF6E /* FormListSelectTableViewCell.xib in Resources */,
 				4EE059E0207AA32A00D4DDB0 /* FormSegmentedControlTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +376,7 @@
 				4EEC37E2207941CF0068873D /* FormTextFieldTableViewCell.swift in Sources */,
 				4E6D8AD62087F112006789E1 /* SegmentedFormViewController.swift in Sources */,
 				4E6D8ACD207C427B006789E1 /* NeedTypeViewController.swift in Sources */,
+				4ED815132093C05F0034EF6E /* FormListSelectTableViewCell.swift in Sources */,
 				4EB32E7020759E69002F4DBB /* ViewController.swift in Sources */,
 				4EEC37DC20791E880068873D /* AlamofireManager.swift in Sources */,
 				4E492C34207C395A002E0F9A /* SelectRecipientViewController.swift in Sources */,

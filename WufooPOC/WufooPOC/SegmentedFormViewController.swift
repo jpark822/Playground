@@ -56,6 +56,15 @@ class SegmentedFormViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard self.formQuestionCells.count > 0,
+         let firstFormItem = self.formQuestionCells[0] as? FormItemView else {
+            return
+        }
+        firstFormItem.mainInputControl.becomeFirstResponder()
+    }
+    
     func configureView() {
         self.navigationItem.title = self.formPage.pageTitle
         self.informationlabel.text = self.formPage.pageInformation
@@ -134,6 +143,12 @@ extension SegmentedFormViewController: UITableViewDataSource, UITableViewDelegat
             dropDownCell.formQuestion = questionModel
             dropDownCell.delegate = self
             return dropDownCell
+        case .listSingleSelect:
+            let singleSelectCell = Bundle.main.loadNibNamed("FormListSelectTableViewCell", owner: self, options: [:])?.first as! FormListSelectTableViewCell
+            self.formQuestionCells.append(singleSelectCell)
+            singleSelectCell.formQuestion = questionModel
+            singleSelectCell.delegate = self
+            return singleSelectCell
         case .textView:
             let textViewCell = Bundle.main.loadNibNamed("FormTextViewTableViewCell", owner: self, options: [:])?.first as! FormTextViewTableViewCell
             self.formQuestionCells.append(textViewCell)

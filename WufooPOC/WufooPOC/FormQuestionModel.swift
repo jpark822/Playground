@@ -15,6 +15,7 @@ struct FormQuestionModel {
         case number = "number"
         case radio = "radio"
         case select = "select"
+        case listSingleSelect = "listSingleSelect"
         case textView = "textarea"
         case phoneNumber = "phone"
     }

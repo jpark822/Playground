@@ -44,25 +44,6 @@ class RequestViewController: UIViewController {
     @objc func dismissKeyboard(gesture:UIGestureRecognizer) {
         self.view.endEditing(true)
     }
-    
-//    @objc func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y == 0 && !self.isPresentingKeyboard {
-//                self.view.frame.origin.y -= keyboardSize.height
-//                self.isPresentingKeyboard = true
-//            }
-//        }
-//    }
-//
-//    @objc func keyboardWillHide(notification: NSNotification) {
-//
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y != 0 && self.isPresentingKeyboard {
-//                self.view.frame.origin.y += keyboardSize.height
-//                self.isPresentingKeyboard = false
-//            }
-//        }
-//    }
 
 }
 

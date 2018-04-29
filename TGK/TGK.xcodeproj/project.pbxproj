@@ -19,6 +19,36 @@
 		4EB32E5C20744644002F4DBB /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E5B20744644002F4DBB /* WebKitViewController.swift */; };
 		4EB32E5E2074579E002F4DBB /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E5D2074579E002F4DBB /* RequestViewController.swift */; };
 		4EB32E60207469AC002F4DBB /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB32E5F207469AC002F4DBB /* FeedbackViewController.swift */; };
+		4ED8155620964D830034EF6E /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8153B20964D810034EF6E /* String+Base64.swift */; };
+		4ED8155720964D830034EF6E /* FormPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8153C20964D810034EF6E /* FormPickerTableViewCell.swift */; };
+		4ED8155820964D830034EF6E /* SegmentedFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8153D20964D810034EF6E /* SegmentedFormModel.swift */; };
+		4ED8155920964D830034EF6E /* TellUsMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8153E20964D810034EF6E /* TellUsMoreViewController.swift */; };
+		4ED8155A20964D830034EF6E /* FormSegmentedControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8153F20964D810034EF6E /* FormSegmentedControlTableViewCell.swift */; };
+		4ED8155B20964D830034EF6E /* MainContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154020964D810034EF6E /* MainContactInfoViewController.swift */; };
+		4ED8155C20964D830034EF6E /* FormTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154120964D810034EF6E /* FormTextViewTableViewCell.swift */; };
+		4ED8155D20964D830034EF6E /* SegmentedForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154220964D810034EF6E /* SegmentedForm.storyboard */; };
+		4ED8155E20964D830034EF6E /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154320964D810034EF6E /* FormTableViewController.swift */; };
+		4ED8155F20964D830034EF6E /* SegmentedFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154420964D820034EF6E /* SegmentedFormViewController.swift */; };
+		4ED8156020964D830034EF6E /* WorkplaceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154520964D820034EF6E /* WorkplaceInfoViewController.swift */; };
+		4ED8156120964D830034EF6E /* FormQuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154620964D820034EF6E /* FormQuestionAnswer.swift */; };
+		4ED8156220964D830034EF6E /* FormSegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154720964D820034EF6E /* FormSegmentedControlTableViewCell.xib */; };
+		4ED8156320964D830034EF6E /* FormItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154820964D820034EF6E /* FormItemView.swift */; };
+		4ED8156420964D830034EF6E /* FormListSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154920964D820034EF6E /* FormListSelectTableViewCell.xib */; };
+		4ED8156520964D830034EF6E /* FormPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154A20964D820034EF6E /* FormPickerTableViewCell.xib */; };
+		4ED8156620964D830034EF6E /* RefererContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154B20964D820034EF6E /* RefererContactViewController.swift */; };
+		4ED8156720964D830034EF6E /* FormTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154C20964D820034EF6E /* FormTextFieldTableViewCell.swift */; };
+		4ED8156820964D830034EF6E /* FormQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8154D20964D820034EF6E /* FormQuestionModel.swift */; };
+		4ED8156920964D830034EF6E /* FormTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154E20964D820034EF6E /* FormTextFieldTableViewCell.xib */; };
+		4ED8156A20964D830034EF6E /* segmentedForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8154F20964D820034EF6E /* segmentedForm.json */; };
+		4ED8156B20964D830034EF6E /* SegmentedFormNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8155020964D820034EF6E /* SegmentedFormNavigationController.swift */; };
+		4ED8156C20964D830034EF6E /* SelectRecipientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8155120964D820034EF6E /* SelectRecipientViewController.swift */; };
+		4ED8156D20964D830034EF6E /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8155220964D830034EF6E /* AlamofireManager.swift */; };
+		4ED8156E20964D830034EF6E /* FormListSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8155320964D830034EF6E /* FormListSelectTableViewCell.swift */; };
+		4ED8156F20964D830034EF6E /* NeedTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8155420964D830034EF6E /* NeedTypeViewController.swift */; };
+		4ED8157020964D830034EF6E /* FormTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8155520964D830034EF6E /* FormTextViewTableViewCell.xib */; };
+		4ED81578209650B70034EF6E /* SheetHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED81577209650B70034EF6E /* SheetHomeViewController.swift */; };
+		4ED8157A2096518B0034EF6E /* Hardcoded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED815792096518B0034EF6E /* Hardcoded.storyboard */; };
+		9A6CE8DF9DBA094CC1496651 /* Pods_TGK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F12A09C3BBC034A78CE2CEF /* Pods_TGK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +66,38 @@
 		4EB32E5B20744644002F4DBB /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
 		4EB32E5D2074579E002F4DBB /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		4EB32E5F207469AC002F4DBB /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		4ED8153B20964D810034EF6E /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		4ED8153C20964D810034EF6E /* FormPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPickerTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormPickerTableViewCell.swift; sourceTree = "<group>"; };
+		4ED8153D20964D810034EF6E /* SegmentedFormModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedFormModel.swift; path = ../../WufooPOC/WufooPOC/SegmentedFormModel.swift; sourceTree = "<group>"; };
+		4ED8153E20964D810034EF6E /* TellUsMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TellUsMoreViewController.swift; path = ../../WufooPOC/WufooPOC/TellUsMoreViewController.swift; sourceTree = "<group>"; };
+		4ED8153F20964D810034EF6E /* FormSegmentedControlTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormSegmentedControlTableViewCell.swift; sourceTree = "<group>"; };
+		4ED8154020964D810034EF6E /* MainContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainContactInfoViewController.swift; path = ../../WufooPOC/WufooPOC/MainContactInfoViewController.swift; sourceTree = "<group>"; };
+		4ED8154120964D810034EF6E /* FormTextViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTextViewTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		4ED8154220964D810034EF6E /* SegmentedForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SegmentedForm.storyboard; path = ../../WufooPOC/WufooPOC/SegmentedForm.storyboard; sourceTree = "<group>"; };
+		4ED8154320964D810034EF6E /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTableViewController.swift; path = ../../WufooPOC/WufooPOC/FormTableViewController.swift; sourceTree = "<group>"; };
+		4ED8154420964D820034EF6E /* SegmentedFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedFormViewController.swift; path = ../../WufooPOC/WufooPOC/SegmentedFormViewController.swift; sourceTree = "<group>"; };
+		4ED8154520964D820034EF6E /* WorkplaceInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkplaceInfoViewController.swift; path = ../../WufooPOC/WufooPOC/WorkplaceInfoViewController.swift; sourceTree = "<group>"; };
+		4ED8154620964D820034EF6E /* FormQuestionAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormQuestionAnswer.swift; path = ../../WufooPOC/WufooPOC/FormQuestionAnswer.swift; sourceTree = "<group>"; };
+		4ED8154720964D820034EF6E /* FormSegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormSegmentedControlTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormSegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		4ED8154820964D820034EF6E /* FormItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormItemView.swift; path = ../../WufooPOC/WufooPOC/FormItemView.swift; sourceTree = "<group>"; };
+		4ED8154920964D820034EF6E /* FormListSelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormListSelectTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormListSelectTableViewCell.xib; sourceTree = "<group>"; };
+		4ED8154A20964D820034EF6E /* FormPickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormPickerTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormPickerTableViewCell.xib; sourceTree = "<group>"; };
+		4ED8154B20964D820034EF6E /* RefererContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RefererContactViewController.swift; path = ../../WufooPOC/WufooPOC/RefererContactViewController.swift; sourceTree = "<group>"; };
+		4ED8154C20964D820034EF6E /* FormTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTextFieldTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		4ED8154D20964D820034EF6E /* FormQuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormQuestionModel.swift; path = ../../WufooPOC/WufooPOC/FormQuestionModel.swift; sourceTree = "<group>"; };
+		4ED8154E20964D820034EF6E /* FormTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormTextFieldTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		4ED8154F20964D820034EF6E /* segmentedForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = segmentedForm.json; path = ../../WufooPOC/WufooPOC/segmentedForm.json; sourceTree = "<group>"; };
+		4ED8155020964D820034EF6E /* SegmentedFormNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedFormNavigationController.swift; path = ../../WufooPOC/WufooPOC/SegmentedFormNavigationController.swift; sourceTree = "<group>"; };
+		4ED8155120964D820034EF6E /* SelectRecipientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectRecipientViewController.swift; path = ../../WufooPOC/WufooPOC/SelectRecipientViewController.swift; sourceTree = "<group>"; };
+		4ED8155220964D830034EF6E /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireManager.swift; path = ../../WufooPOC/WufooPOC/AlamofireManager.swift; sourceTree = "<group>"; };
+		4ED8155320964D830034EF6E /* FormListSelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormListSelectTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormListSelectTableViewCell.swift; sourceTree = "<group>"; };
+		4ED8155420964D830034EF6E /* NeedTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeedTypeViewController.swift; path = ../../WufooPOC/WufooPOC/NeedTypeViewController.swift; sourceTree = "<group>"; };
+		4ED8155520964D830034EF6E /* FormTextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormTextViewTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		4ED81577209650B70034EF6E /* SheetHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHomeViewController.swift; sourceTree = "<group>"; };
+		4ED815792096518B0034EF6E /* Hardcoded.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Hardcoded.storyboard; path = ../../WufooPOC/WufooPOC/Hardcoded.storyboard; sourceTree = "<group>"; };
+		5F12A09C3BBC034A78CE2CEF /* Pods_TGK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C76A7BBD519D9EB837ABBC0 /* Pods-TGK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TGK/Pods-TGK.release.xcconfig"; sourceTree = "<group>"; };
+		D578E45047040277A747260F /* Pods-TGK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TGK/Pods-TGK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,15 +105,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6CE8DF9DBA094CC1496651 /* Pods_TGK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494CF597137E566C94FD037F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D578E45047040277A747260F /* Pods-TGK.debug.xcconfig */,
+				7C76A7BBD519D9EB837ABBC0 /* Pods-TGK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4E6D8AD7208805BA006789E1 /* FormPOC */ = {
 			isa = PBXGroup;
 			children = (
+				4ED8157520964E250034EF6E /* CommonComponents */,
+				4ED8154820964D820034EF6E /* FormItemView.swift */,
+				4ED8157420964E0D0034EF6E /* SingleSheet */,
+				4ED8157220964E050034EF6E /* Segmented */,
+				4ED8157320964E090034EF6E /* Hardcoded */,
 			);
 			name = FormPOC;
 			sourceTree = "<group>";
@@ -61,6 +138,8 @@
 			children = (
 				4EB32E382073F7B7002F4DBB /* TGK */,
 				4EB32E372073F7B7002F4DBB /* Products */,
+				494CF597137E566C94FD037F /* Pods */,
+				71FB6F9DA57AA613E344E97B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +154,8 @@
 		4EB32E382073F7B7002F4DBB /* TGK */ = {
 			isa = PBXGroup;
 			children = (
+				4ED8157620964E610034EF6E /* Models */,
+				4ED8157120964DFE0034EF6E /* NetworkManager */,
 				4E6D8AD7208805BA006789E1 /* FormPOC */,
 				4EB32E5820741656002F4DBB /* Views */,
 				4EB32E4C2073F9C1002F4DBB /* ViewControllers */,
@@ -83,6 +164,7 @@
 				4EB32E402073F7B7002F4DBB /* Assets.xcassets */,
 				4EB32E422073F7B7002F4DBB /* LaunchScreen.storyboard */,
 				4EB32E452073F7B7002F4DBB /* Info.plist */,
+				4ED8153B20964D810034EF6E /* String+Base64.swift */,
 				4EB32E4F2073FE57002F4DBB /* UIColor+TGK.swift */,
 			);
 			path = TGK;
@@ -98,6 +180,7 @@
 				4EB32E5B20744644002F4DBB /* WebKitViewController.swift */,
 				4EB32E5D2074579E002F4DBB /* RequestViewController.swift */,
 				4EB32E5F207469AC002F4DBB /* FeedbackViewController.swift */,
+				4ED81577209650B70034EF6E /* SheetHomeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +192,82 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		4ED8157120964DFE0034EF6E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8155220964D830034EF6E /* AlamofireManager.swift */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		4ED8157220964E050034EF6E /* Segmented */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8154220964D810034EF6E /* SegmentedForm.storyboard */,
+				4ED8154420964D820034EF6E /* SegmentedFormViewController.swift */,
+				4ED8155020964D820034EF6E /* SegmentedFormNavigationController.swift */,
+				4ED8154F20964D820034EF6E /* segmentedForm.json */,
+			);
+			name = Segmented;
+			sourceTree = "<group>";
+		};
+		4ED8157320964E090034EF6E /* Hardcoded */ = {
+			isa = PBXGroup;
+			children = (
+				4ED815792096518B0034EF6E /* Hardcoded.storyboard */,
+				4ED8154020964D810034EF6E /* MainContactInfoViewController.swift */,
+				4ED8155420964D830034EF6E /* NeedTypeViewController.swift */,
+				4ED8154B20964D820034EF6E /* RefererContactViewController.swift */,
+				4ED8153E20964D810034EF6E /* TellUsMoreViewController.swift */,
+				4ED8154520964D820034EF6E /* WorkplaceInfoViewController.swift */,
+				4ED8155120964D820034EF6E /* SelectRecipientViewController.swift */,
+			);
+			name = Hardcoded;
+			sourceTree = "<group>";
+		};
+		4ED8157420964E0D0034EF6E /* SingleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8154320964D810034EF6E /* FormTableViewController.swift */,
+			);
+			name = SingleSheet;
+			sourceTree = "<group>";
+		};
+		4ED8157520964E250034EF6E /* CommonComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8155320964D830034EF6E /* FormListSelectTableViewCell.swift */,
+				4ED8154920964D820034EF6E /* FormListSelectTableViewCell.xib */,
+				4ED8153C20964D810034EF6E /* FormPickerTableViewCell.swift */,
+				4ED8154A20964D820034EF6E /* FormPickerTableViewCell.xib */,
+				4ED8153F20964D810034EF6E /* FormSegmentedControlTableViewCell.swift */,
+				4ED8154720964D820034EF6E /* FormSegmentedControlTableViewCell.xib */,
+				4ED8154C20964D820034EF6E /* FormTextFieldTableViewCell.swift */,
+				4ED8154E20964D820034EF6E /* FormTextFieldTableViewCell.xib */,
+				4ED8154120964D810034EF6E /* FormTextViewTableViewCell.swift */,
+				4ED8155520964D830034EF6E /* FormTextViewTableViewCell.xib */,
+			);
+			name = CommonComponents;
+			sourceTree = "<group>";
+		};
+		4ED8157620964E610034EF6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8154620964D820034EF6E /* FormQuestionAnswer.swift */,
+				4ED8154D20964D820034EF6E /* FormQuestionModel.swift */,
+				4ED8153D20964D810034EF6E /* SegmentedFormModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		71FB6F9DA57AA613E344E97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F12A09C3BBC034A78CE2CEF /* Pods_TGK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EB32E482073F7B7002F4DBB /* Build configuration list for PBXNativeTarget "TGK" */;
 			buildPhases = (
+				DD866C472BAC39A677B389AF /* [CP] Check Pods Manifest.lock */,
 				4EB32E322073F7B7002F4DBB /* Sources */,
 				4EB32E332073F7B7002F4DBB /* Frameworks */,
 				4EB32E342073F7B7002F4DBB /* Resources */,
+				DE81EA01F48E899FE1A65115 /* [CP] Embed Pods Frameworks */,
+				4FE712460D911C142D997D0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,11 +332,73 @@
 			files = (
 				4EB32E442073F7B7002F4DBB /* LaunchScreen.storyboard in Resources */,
 				4EB32E412073F7B7002F4DBB /* Assets.xcassets in Resources */,
+				4ED8157A2096518B0034EF6E /* Hardcoded.storyboard in Resources */,
 				4EB32E3F2073F7B7002F4DBB /* Main.storyboard in Resources */,
+				4ED8156520964D830034EF6E /* FormPickerTableViewCell.xib in Resources */,
+				4ED8155D20964D830034EF6E /* SegmentedForm.storyboard in Resources */,
+				4ED8157020964D830034EF6E /* FormTextViewTableViewCell.xib in Resources */,
+				4ED8156220964D830034EF6E /* FormSegmentedControlTableViewCell.xib in Resources */,
+				4ED8156420964D830034EF6E /* FormListSelectTableViewCell.xib in Resources */,
+				4ED8156A20964D830034EF6E /* segmentedForm.json in Resources */,
+				4ED8156920964D830034EF6E /* FormTextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FE712460D911C142D997D0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TGK/Pods-TGK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD866C472BAC39A677B389AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TGK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE81EA01F48E899FE1A65115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TGK/Pods-TGK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TGK/Pods-TGK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EB32E322073F7B7002F4DBB /* Sources */ = {
@@ -182,14 +406,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB32E5620741454002F4DBB /* HelpOutViewController.swift in Sources */,
+				4ED8156D20964D830034EF6E /* AlamofireManager.swift in Sources */,
+				4ED8155C20964D830034EF6E /* FormTextViewTableViewCell.swift in Sources */,
+				4ED8156B20964D830034EF6E /* SegmentedFormNavigationController.swift in Sources */,
+				4ED8155720964D830034EF6E /* FormPickerTableViewCell.swift in Sources */,
 				4EB32E4E2073F9CE002F4DBB /* LoginViewController.swift in Sources */,
+				4ED8155B20964D830034EF6E /* MainContactInfoViewController.swift in Sources */,
+				4ED8156320964D830034EF6E /* FormItemView.swift in Sources */,
 				4EB32E502073FE57002F4DBB /* UIColor+TGK.swift in Sources */,
+				4ED8155A20964D830034EF6E /* FormSegmentedControlTableViewCell.swift in Sources */,
 				4EB32E5C20744644002F4DBB /* WebKitViewController.swift in Sources */,
+				4ED8156F20964D830034EF6E /* NeedTypeViewController.swift in Sources */,
+				4ED8156620964D830034EF6E /* RefererContactViewController.swift in Sources */,
 				4EB32E54207403EF002F4DBB /* MainTabBarController.swift in Sources */,
 				4EB32E522074038D002F4DBB /* EventsWebViewController.swift in Sources */,
+				4ED8156020964D830034EF6E /* WorkplaceInfoViewController.swift in Sources */,
+				4ED8156120964D830034EF6E /* FormQuestionAnswer.swift in Sources */,
+				4ED8155E20964D830034EF6E /* FormTableViewController.swift in Sources */,
+				4ED8156E20964D830034EF6E /* FormListSelectTableViewCell.swift in Sources */,
+				4ED8156C20964D830034EF6E /* SelectRecipientViewController.swift in Sources */,
+				4ED8155F20964D830034EF6E /* SegmentedFormViewController.swift in Sources */,
 				4EB32E5E2074579E002F4DBB /* RequestViewController.swift in Sources */,
+				4ED8155920964D830034EF6E /* TellUsMoreViewController.swift in Sources */,
+				4ED81578209650B70034EF6E /* SheetHomeViewController.swift in Sources */,
+				4ED8155820964D830034EF6E /* SegmentedFormModel.swift in Sources */,
+				4ED8155620964D830034EF6E /* String+Base64.swift in Sources */,
+				4ED8156720964D830034EF6E /* FormTextFieldTableViewCell.swift in Sources */,
 				4EB32E60207469AC002F4DBB /* FeedbackViewController.swift in Sources */,
 				4EB32E3A2073F7B7002F4DBB /* AppDelegate.swift in Sources */,
+				4ED8156820964D830034EF6E /* FormQuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +569,7 @@
 		};
 		4EB32E492073F7B7002F4DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D578E45047040277A747260F /* Pods-TGK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +585,7 @@
 		};
 		4EB32E4A2073F7B7002F4DBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C76A7BBD519D9EB837ABBC0 /* Pods-TGK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
