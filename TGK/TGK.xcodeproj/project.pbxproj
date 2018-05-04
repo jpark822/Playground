@@ -48,6 +48,7 @@
 		4ED8157020964D830034EF6E /* FormTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8155520964D830034EF6E /* FormTextViewTableViewCell.xib */; };
 		4ED81578209650B70034EF6E /* SheetHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED81577209650B70034EF6E /* SheetHomeViewController.swift */; };
 		4ED8157A2096518B0034EF6E /* Hardcoded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED815792096518B0034EF6E /* Hardcoded.storyboard */; };
+		4ED8158120992A260034EF6E /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8158020992A260034EF6E /* LaunchAnimationViewController.swift */; };
 		9A6CE8DF9DBA094CC1496651 /* Pods_TGK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F12A09C3BBC034A78CE2CEF /* Pods_TGK.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		4EB32E5B20744644002F4DBB /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
 		4EB32E5D2074579E002F4DBB /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		4EB32E5F207469AC002F4DBB /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		4ED3880C209BE82500A8BEE2 /* TGK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TGK.entitlements; sourceTree = "<group>"; };
 		4ED8153B20964D810034EF6E /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
 		4ED8153C20964D810034EF6E /* FormPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPickerTableViewCell.swift; path = ../../WufooPOC/WufooPOC/FormPickerTableViewCell.swift; sourceTree = "<group>"; };
 		4ED8153D20964D810034EF6E /* SegmentedFormModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentedFormModel.swift; path = ../../WufooPOC/WufooPOC/SegmentedFormModel.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		4ED8155520964D830034EF6E /* FormTextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormTextViewTableViewCell.xib; path = ../../WufooPOC/WufooPOC/FormTextViewTableViewCell.xib; sourceTree = "<group>"; };
 		4ED81577209650B70034EF6E /* SheetHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHomeViewController.swift; sourceTree = "<group>"; };
 		4ED815792096518B0034EF6E /* Hardcoded.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Hardcoded.storyboard; path = ../../WufooPOC/WufooPOC/Hardcoded.storyboard; sourceTree = "<group>"; };
+		4ED8158020992A260034EF6E /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
 		5F12A09C3BBC034A78CE2CEF /* Pods_TGK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C76A7BBD519D9EB837ABBC0 /* Pods-TGK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TGK/Pods-TGK.release.xcconfig"; sourceTree = "<group>"; };
 		D578E45047040277A747260F /* Pods-TGK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TGK/Pods-TGK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		4EB32E382073F7B7002F4DBB /* TGK */ = {
 			isa = PBXGroup;
 			children = (
+				4ED3880C209BE82500A8BEE2 /* TGK.entitlements */,
 				4ED8157620964E610034EF6E /* Models */,
 				4ED8157120964DFE0034EF6E /* NetworkManager */,
 				4E6D8AD7208805BA006789E1 /* FormPOC */,
@@ -181,6 +185,7 @@
 				4EB32E5D2074579E002F4DBB /* RequestViewController.swift */,
 				4EB32E5F207469AC002F4DBB /* FeedbackViewController.swift */,
 				4ED81577209650B70034EF6E /* SheetHomeViewController.swift */,
+				4ED8158020992A260034EF6E /* LaunchAnimationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +309,11 @@
 					4EB32E352073F7B7002F4DBB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -406,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB32E5620741454002F4DBB /* HelpOutViewController.swift in Sources */,
+				4ED8158120992A260034EF6E /* LaunchAnimationViewController.swift in Sources */,
 				4ED8156D20964D830034EF6E /* AlamofireManager.swift in Sources */,
 				4ED8155C20964D830034EF6E /* FormTextViewTableViewCell.swift in Sources */,
 				4ED8156B20964D830034EF6E /* SegmentedFormNavigationController.swift in Sources */,
@@ -573,10 +584,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VZBY3CL334;
+				DEVELOPMENT_TEAM = 79H836U56A;
 				INFOPLIST_FILE = TGK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.thegivingkitchen.tgkapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaytest.purchase.InAppPurchaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,10 +600,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VZBY3CL334;
+				DEVELOPMENT_TEAM = 79H836U56A;
 				INFOPLIST_FILE = TGK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.thegivingkitchen.tgkapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaytest.purchase.InAppPurchaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

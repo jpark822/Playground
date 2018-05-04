@@ -49,6 +49,7 @@ class SegmentedFormNavigationController: UINavigationController {
         self.segmentedFormViewControllers = allPageViewControllers
         
         if let firstPage = self.segmentedFormViewControllers.first {
+            firstPage.isFirstPageInForm = true
             self.viewControllers = [firstPage]
         }
     }

@@ -40,7 +40,7 @@ class NeedTypeViewController: UIViewController, UITableViewDelegate, UITableView
         case 1:
             cell?.textLabel?.text = "Illness"
         case 2:
-            cell?.textLabel?.text = "Funeral/Death of an Immediate Family Member "
+            cell?.textLabel?.text = "Funeral/Death (Immediate Family)"
         case 3:
             cell?.textLabel?.text = "Disaster (Flood, fire, storm damage, etc.)"
         case 4:

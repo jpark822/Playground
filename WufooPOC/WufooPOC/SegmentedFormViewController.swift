@@ -21,6 +21,7 @@ class SegmentedFormViewController: UIViewController {
     
     //dependencies
     var isLastPageInForm = false
+    var isFirstPageInForm = false
     var delegate:SegmentedFormViewControllerDelegate?
     var formPage:SegmentedFormModel.Page! {
         didSet {
@@ -54,6 +55,11 @@ class SegmentedFormViewController: UIViewController {
             rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(advancePageOrSubmit))
         }
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
+        if self.isFirstPageInForm {
+            let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(userDidTapCancel))
+            self.navigationItem.leftBarButtonItem = cancelButton
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -69,6 +75,10 @@ class SegmentedFormViewController: UIViewController {
         self.navigationItem.title = self.formPage.pageTitle
         self.informationlabel.text = self.formPage.pageInformation
         self.tableView.reloadData()
+    }
+    
+    @objc func userDidTapCancel() {
+        self.dismiss(animated: true)
     }
     
     @objc func endEditingInTableView() {

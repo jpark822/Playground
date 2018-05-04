@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PassKit
 
 class HelpOutViewController: UIViewController {
 
@@ -35,12 +36,53 @@ class HelpOutViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         super.viewWillAppear(animated)
     }
-
+    
+    @IBAction func donatePressed(_ sender: Any) {
+//        let paymentNetworks: [PKPaymentNetwork] = [.amex, .masterCard, .visa]
+//        if PKPaymentAuthorizationViewController.canMakePayments() {
+//            let request = PKPaymentRequest()
+//            request.supportedNetworks = [.amex, .masterCard, .visa]
+//            request.countryCode = "US"
+//            request.currencyCode = "USD"
+//            request.merchantIdentifier = "12345"
+//            request.merchantCapabilities = .capability3DS
+//            
+//            let donationAmount = PKPaymentSummaryItem(label: "DONATION $25", amount: NSDecimalNumber(string: "25.00"))
+//            
+//            let total = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(string: "25.00"))
+//            
+//            request.paymentSummaryItems = [donationAmount, total]
+//            
+//            let viewController = PKPaymentAuthorizationViewController(paymentRequest: request)!
+//            viewController.delegate = self
+//            self.navigationController?.present(viewController, animated: true)
+//        } else {
+//            // Show your own credit card form.
+//        }
+    }
+    
     @IBAction func alternateDonationPressed(_ sender: Any) {
         let webVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebKitViewControllerId") as! WebKitViewController
         webVC.urlString = "https://connect.clickandpledge.com/w/Form/d11bff52-0cd0-44d8-9403-465614e4f342"
         webVC.title = "Thank you!"
         self.navigationController?.pushViewController(webVC, animated: true)
+    }
+}
+
+//MARK PKPaymentdelegate
+extension HelpOutViewController: PKPaymentAuthorizationViewControllerDelegate {
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
+        // Use your payment processor's SDK to finish charging your customer.
+        // When this is done, call:
+//        completion(.success)
+    }
+    
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        self.dismiss(animated: true)
+    }
+    
+    func paymentAuthorizationViewController(controller: PKPaymentAuthorizationViewController, didSelectPaymentMethod paymentMethod: PKPaymentMethod, completion: @escaping ([PKPaymentSummaryItem]) -> Void) {
+        
     }
 }
 

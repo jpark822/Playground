@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OaM-Pr-JEO">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -80,9 +80,6 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="tintColor" red="0.13482427597045898" green="0.24093925952911377" blue="0.48364877700805664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="jg3-rk-HxP" kind="show" id="Vvp-ns-R29"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tgkLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Bys-l2-E5U">
                                 <rect key="frame" x="97" y="86" width="180" height="180"/>
@@ -103,9 +100,6 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 <color key="tintColor" red="0.91765767335891724" green="0.36021479964256287" blue="0.28106904029846191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Continue as a guest"/>
-                                <connections>
-                                    <segue destination="jg3-rk-HxP" kind="show" id="van-UD-3OI"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,7 +122,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="30.295566502463057"/>
+            <point key="canvasLocation" x="-602" y="35"/>
+        </scene>
+        <!--Launch Animation View Controller-->
+        <scene sceneID="CPq-96-3xD">
+            <objects>
+                <viewController id="OaM-Pr-JEO" customClass="LaunchAnimationViewController" customModule="TGK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9xe-pA-237">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tgkLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mg8-EJ-3DO">
+                                <rect key="frame" x="97" y="321" width="180" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mg8-EJ-3DO" firstAttribute="centerX" secondItem="OAE-yr-q5E" secondAttribute="centerX" id="37x-rC-28h"/>
+                            <constraint firstItem="mg8-EJ-3DO" firstAttribute="centerY" secondItem="OAE-yr-q5E" secondAttribute="centerY" id="Ft9-bO-x3o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OAE-yr-q5E"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoView" destination="mg8-EJ-3DO" id="ktj-DN-PXk"/>
+                        <segue destination="jg3-rk-HxP" kind="show" identifier="showMainTabBarSegue" id="y4B-7B-WCV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIe-gu-mxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="38"/>
         </scene>
         <!--Events-->
         <scene sceneID="4LY-Fw-MiT">
@@ -138,8 +160,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kta-lA-889">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                            <wkWebView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kta-lA-889">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="661"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -149,10 +171,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Kta-lA-889" firstAttribute="top" secondItem="d8k-1G-JGa" secondAttribute="top" id="6oX-US-obi"/>
-                            <constraint firstItem="Kta-lA-889" firstAttribute="leading" secondItem="d8k-1G-JGa" secondAttribute="leading" id="T0X-Rg-Rc0"/>
-                            <constraint firstItem="d8k-1G-JGa" firstAttribute="bottom" secondItem="Kta-lA-889" secondAttribute="bottom" id="a1i-bU-Y21"/>
-                            <constraint firstItem="d8k-1G-JGa" firstAttribute="trailing" secondItem="Kta-lA-889" secondAttribute="trailing" id="wIi-go-SWF"/>
+                            <constraint firstItem="d8k-1G-JGa" firstAttribute="bottom" secondItem="Kta-lA-889" secondAttribute="bottom" constant="-20" id="4bJ-TG-IHH"/>
+                            <constraint firstItem="Kta-lA-889" firstAttribute="leading" secondItem="d8k-1G-JGa" secondAttribute="leading" id="Nek-Wy-QLp"/>
+                            <constraint firstItem="Kta-lA-889" firstAttribute="top" secondItem="d8k-1G-JGa" secondAttribute="top" id="VdP-DO-FVs"/>
+                            <constraint firstItem="d8k-1G-JGa" firstAttribute="trailing" secondItem="Kta-lA-889" secondAttribute="trailing" id="kn6-Rl-yZN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d8k-1G-JGa"/>
                     </view>
@@ -163,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niv-JW-3CP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="509"/>
+            <point key="canvasLocation" x="2184.8000000000002" y="508.37438423645324"/>
         </scene>
         <!--Feedback-->
         <scene sceneID="tZV-ZQ-2S6">
@@ -463,6 +485,9 @@
                                 <rect key="frame" x="101" y="248" width="173" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="appleDonateButton"/>
+                                <connections>
+                                    <action selector="donatePressed:" destination="Wj2-Rf-VjS" eventType="touchUpInside" id="REl-L6-ZOK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDR-zV-HTj">
                                 <rect key="frame" x="24" y="299" width="327" height="69"/>
@@ -515,7 +540,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="dQ9-QD-nc0">
             <objects>
-                <tabBarController id="jg3-rk-HxP" customClass="MainTabBarController" customModule="TGK" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarControllerId" id="jg3-rk-HxP" customClass="MainTabBarController" customModule="TGK" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9ol-hW-B1D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -602,7 +627,4 @@
         <image name="tabBarHand" width="25" height="25"/>
         <image name="tgkLogo" width="180" height="180"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="van-UD-3OI"/>
-    </inferredMetricsTieBreakers>
 </document>

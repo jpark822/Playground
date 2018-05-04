@@ -15,7 +15,7 @@ class EventsWebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let url = URL(string: "https://thegivingkitchen.org/events-calendar") {
             self.webView.load(URLRequest(url: url))
         }
