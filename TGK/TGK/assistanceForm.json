@@ -1,0 +1,431 @@
+Fields =     (
+                {
+            ID = EntryId;
+            Title = "Entry Id";
+            Type = text;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = Self;
+                },
+                                {
+                    Label = Friend;
+                },
+                                {
+                    Label = Coworker;
+                },
+                                {
+                    Label = Employee;
+                },
+                                {
+                    Label = Other;
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field1;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Do you know someone in need?";
+            Type = radio;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = Yes;
+                },
+                                {
+                    Label = "Not yet";
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field34;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Have you informed this person that you're referring them to GK?";
+            Type = radio;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field10;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Name of person in need:";
+            Type = text;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field11;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Email of person  in need:";
+            Type = email;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field12;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Phone Number of person  in need:";
+            Type = phone;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = Call;
+                },
+                                {
+                    Label = Text;
+                },
+                                {
+                    Label = Email;
+                },
+                                {
+                    Label = "Contact the person submitting referral instead (if different).";
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field32;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Best method of contact for person in need:";
+            Type = radio;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field6;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Restauarant where the person in need works (just used for area and type of business):";
+            Type = text;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field16;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Position of worker";
+            Type = text;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field2;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Name of person submitting referral (if different):";
+            Type = text;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field8;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Email of person submitting referral (if different): ";
+            Type = email;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field7;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Phone Number of person submitting referral (if different): ";
+            Type = phone;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = Injury;
+                },
+                                {
+                    Label = Illness;
+                },
+                                {
+                    Label = "Funeral/Death of an Immediate Family Member";
+                },
+                                {
+                    Label = "Disaster (Flood, fire, storm damage, etc.)";
+                },
+                                {
+                    Label = Other;
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field18;
+            Instructions = "";
+            IsRequired = 1;
+            Page = 1;
+            Title = "Type of Unexpected Hardship:";
+            Type = radio;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field3;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Please tell us just a few words about the crisis and about any lost work or wages.";
+            Type = textarea;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field20;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "Zip code of person in need:";
+            Type = text;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = Barrow;
+                },
+                                {
+                    Label = Bartow;
+                },
+                                {
+                    Label = Butts;
+                },
+                                {
+                    Label = Carroll;
+                },
+                                {
+                    Label = Chattahoochee;
+                },
+                                {
+                    Label = Chattooga;
+                },
+                                {
+                    Label = Cherokee;
+                },
+                                {
+                    Label = Clarke;
+                },
+                                {
+                    Label = Clayton;
+                },
+                                {
+                    Label = Cobb;
+                },
+                                {
+                    Label = Coweta;
+                },
+                                {
+                    Label = Dawson;
+                },
+                                {
+                    Label = DeKalb;
+                },
+                                {
+                    Label = Douglas;
+                },
+                                {
+                    Label = Fayette;
+                },
+                                {
+                    Label = Floyd;
+                },
+                                {
+                    Label = Forsyth;
+                },
+                                {
+                    Label = Fulton;
+                },
+                                {
+                    Label = Greene;
+                },
+                                {
+                    Label = Gordon;
+                },
+                                {
+                    Label = Gwinnett;
+                },
+                                {
+                    Label = Hall;
+                },
+                                {
+                    Label = Haralson;
+                },
+                                {
+                    Label = Harris;
+                },
+                                {
+                    Label = Heard;
+                },
+                                {
+                    Label = Henry;
+                },
+                                {
+                    Label = Jackson;
+                },
+                                {
+                    Label = Jasper;
+                },
+                                {
+                    Label = Lamar;
+                },
+                                {
+                    Label = Marion;
+                },
+                                {
+                    Label = Meriwether;
+                },
+                                {
+                    Label = Morgan;
+                },
+                                {
+                    Label = Muscogee;
+                },
+                                {
+                    Label = Newton;
+                },
+                                {
+                    Label = Oconee;
+                },
+                                {
+                    Label = Paulding;
+                },
+                                {
+                    Label = Pickens;
+                },
+                                {
+                    Label = Pike;
+                },
+                                {
+                    Label = Polk;
+                },
+                                {
+                    Label = Putnam;
+                },
+                                {
+                    Label = Rockdale;
+                },
+                                {
+                    Label = Spalding;
+                },
+                                {
+                    Label = Stewart;
+                },
+                                {
+                    Label = Talbot;
+                },
+                                {
+                    Label = Troup;
+                },
+                                {
+                    Label = Walton;
+                },
+                                {
+                    Label = Webster;
+                },
+                                {
+                    Label = "I don't see my county on this list./Not sure";
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field29;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "County of person in need:";
+            Type = select;
+        },
+                {
+            Choices =             (
+                                {
+                    Label = "A friend or co-worker";
+                },
+                                {
+                    Label = "I am a previous grantee";
+                },
+                                {
+                    Label = "My manager or owner";
+                },
+                                {
+                    Label = "Social media";
+                },
+                                {
+                    Label = Website;
+                },
+                                {
+                    Label = "At an event";
+                },
+                                {
+                    Label = "from a TGK staff member";
+                },
+                                {
+                    Label = Other;
+                }
+            );
+            ClassNames = "";
+            DefaultVal = "";
+            HasOtherField = 0;
+            ID = Field22;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "How did you hear about the Giving Kitchen?";
+            Type = select;
+        },
+                {
+            ClassNames = "";
+            DefaultVal = "";
+            ID = Field24;
+            Instructions = "";
+            IsRequired = 0;
+            Page = 1;
+            Title = "If at an event or other, please share more:";
+            Type = text;
+        },
+                {
+            ID = DateCreated;
+            Title = "Date Created";
+            Type = date;
+        },
+                {
+            ID = CreatedBy;
+            Title = "Created By";
+            Type = text;
+        },
+                {
+            ID = LastUpdated;
+            Title = "Last Updated";
+            Type = date;
+        },
+                {
+            ID = UpdatedBy;
+            Title = "Updated By";
+            Type = text;
+        }
+    )

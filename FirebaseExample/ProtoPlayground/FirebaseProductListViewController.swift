@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class FirebaseProductListViewController: UIViewController {
 
@@ -23,6 +24,21 @@ class FirebaseProductListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Alamofire.request("https://firebasestorage.googleapis.com/v0/b/playground-38984.appspot.com/o/z1a0tap91any17q.json?alt=media", encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+            guard let json = response.result.value as? [String:Any] else {
+                return
+            }
+            
+            if let pagesArray = json["Pages"] as? [[String:Any]],
+                let questionsArray = pagesArray[0]["questions"] as? [[String:Any]] {
+                let firstQuestion = questionsArray[0] as? [String:Any]
+                print(firstQuestion!["Title"])
+            }
+            
+            
+            
+        }
         
         self.tableView.register(UINib(nibName: "FireBaseItemTableViewCell", bundle: nil), forCellReuseIdentifier: self.itemCellReuseId)
 

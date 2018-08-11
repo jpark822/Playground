@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		4B71D7DBC5D9FACE92FC4242 /* Pods-ProtoPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtoPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtoPlayground/Pods-ProtoPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		4E09B7E5211905E200584924 /* ProtoPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProtoPlayground.entitlements; sourceTree = "<group>"; };
 		4E69723820003CCE00DAE431 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E69723D20003D5500DAE431 /* FirebaseDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseDemo.storyboard; sourceTree = "<group>"; };
 		4E69723F20003D6B00DAE431 /* FirebaseLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		4EA982FE1FFD07570019E25D /* ProtoPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				4E09B7E5211905E200584924 /* ProtoPlayground.entitlements */,
 				4EA983031FFD07570019E25D /* Main.storyboard */,
 				4E69723720003CC300DAE431 /* Home */,
 				4E69723C20003D3F00DAE431 /* FirebaseDemo */,
@@ -251,6 +253,11 @@
 					4EA982FB1FFD07570019E25D = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
